@@ -22,7 +22,7 @@
   <body>
     <!--HEADER TOPBAR-->
     <ul
-      class="nav nav-pills nav-fill p-4 d-flex justify-content-between"
+      class="nav nav-pills sticky-top nav-fill p-4 d-flex justify-content-between"
       style="background-color: #023a51"
     >
       <div class="d-flex">
@@ -31,7 +31,7 @@
             >FINLAB.WP</a
           >
         </li>
-        <div class="d-flex align ms-5 pt-2">
+        <div class="d-flex align ms-5 pt-2 d-none d-lg-block">
           <a class="navbar-brand" href="#" ms-1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
       <div class="d-flex">
         <button
           type="button"
-          class="btn btn-squared-green me-3 txt-white"
+          class="btn btn-squared-green me-3 txt-white d-none d-sm-inline d-md-inline lg-inline "
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
@@ -252,7 +252,7 @@
         <a class="navbar-brand" href="#">
           <button
             type="button"
-            class="btn btn-rounded-white"
+            class="btn btn-rounded-white  d-none d-sm-none d-md-inline lg-inline"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title="No products in the cart."
@@ -272,7 +272,7 @@
           </button>
         </a>
         <a class="navbar-brand" href="#">
-          <button class="btn btn-rounded-white">
+          <button class="btn btn-rounded-white d-none d-sm-none d-md-inline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -287,12 +287,298 @@
             </svg>
           </button>
         </a>
+        <!--INSERISCI QUI IL BURGER OFFCANVAS-->
+        <button
+          class="btn btn-rounded-white d-sm-inline d-md-inline d-lg-none d-xl-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="6 -1 12 12"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-end-header">
+
+            <button
+              type="button"
+              class="btn-close btn-squared-green text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-end-body">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Homepage</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                <li><a class="dropdown-item" href="#">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Who We Are</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
+                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                <li><a class="dropdown-item" href="#">Our History</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >What We Do</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Accounting Services</a></li>
+                <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
+                <li><a class="dropdown-item" href="#">Capital Investment</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Finance & Restructuring</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+                <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+                <li><a class="dropdown-item" href="#">All Services Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Case Studies</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+                <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+                <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog & Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </div>
+        </div>
       </div>
     </ul>
     <!--TOPBAR FINISH-->
-
-    
+    <div class="flex-row d-none w-100 d-lg-inline-block">
+      <!--DOWNBAR STARTS-->
+      <ul
+        class="nav nav-tabs p-4 d-flex justify-content-between"
+        style="background-color: #023a51"
+      >
+        <button
+          class="btn btn-rounded-green"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="30"
+            fill="white"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header">
+           
+            <button
+              type="button"
+              class="btn-close btn-rounded-green text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <figure class="figure">
+              <img
+                src="/img/grattacieli.jpg"
+                class="figure-img img-fluid"
+                alt="..."
+              />
+            </figure>
+            <p>
+              Our firm provides the expert support organisations need to thrive
+              in a fast-changing world.
+            </p>
+            <p>
+              <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York
+              11226 United States. <br />
+              <strong>Phone:</strong> <a href="tel:+">0712 610 33 181</a> <br />
+              <strong>Mail:</strong> <a href="mailto:">info@example.com</a>
+            </p>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label"
+                >Request a callback</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Your Name *"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Phone Number *"
+                required
+              />
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-squared-green txt-white" type="button">
+                Request a Callback
+              </button>
+            </div>
+          </div>
+        </div>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle txt-white"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Homepage</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home 1</a></li>
+            <li><a class="dropdown-item" href="#">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle txt-white"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
+            <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+            <li><a class="dropdown-item" href="#">Our History</a></li>
+            <li><a class="dropdown-item" href="#">Careers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle txt-white"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >What We Do</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Accounting Services</a></li>
+            <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
+            <li><a class="dropdown-item" href="#">Capital Investment</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Finance & Restructuring</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+            <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+            <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+            <li><a class="dropdown-item" href="#">All Services Page</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle txt-white"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Case Studies</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+            <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+            <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link txt-white" href="#">Blog & Insights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link txt-white" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link txt-white" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
     <!--HEADER END-->
+    <!--HERE STARTS HERO-->
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
