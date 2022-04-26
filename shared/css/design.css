@@ -2,3 +2,51 @@
     background-color: #2cbc63;
     color: #fff;
 }
+
+/* TYPOGRAPHY */
+.txt-white {
+    color: #fff;
+}
+.txt-gray {
+    color: #9ea4b1;
+}
+.txt-gray-darker {
+    color: #5c667d;
+}
+.txt-blue {
+    color: #023a51;
+}
+.txt-green {
+    color: #2cbc63;
+}
+
+.txt-weight-200 {
+    font-weight: 200;
+}
+.txt-weight-600 {
+    font-weight: 600;
+}
+.txt-weight-700 {
+    font-weight: 700;
+}
+
+/* BUTTONS */
+.btn-rounded-green,
+.btn-rounded-white {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn-rounded-white {
+    background-color: #fff;
+}
+.btn-rounded-green {
+    background-color: #2cbc63;
+}
+
+.btn-squared-green {
+    border-radius: 0;
+    background-color: #2cbc63;
+}
