@@ -22,14 +22,13 @@
   <body>
     <!--HEADER : TOPBAR-->
     <ul
-      class="nav nav-pills sticky-top nav-fill p-4 d-flex justify-content-between"
-      style="background-color: #023a51"
+      class="nav nav-pills bg-dark sticky-top nav-fill p-4 d-flex justify-content-between"
     >
       <div class="d-flex">
         <li class="nav-item">
-          <a class="nav-link fs-1 txt-green" aria-current="page" href="#"
-            >FINLAB.WP</a
-          >
+          <a class="nav-link fs-1 txt-green" aria-current="page" href="#">
+            <img src="/shared/images/topbar-logo.png" alt="" />
+          </a>
         </li>
         <div class="d-flex align ms-5 pt-2 d-none d-lg-block">
           <a class="navbar-brand" href="#" ms-1>
@@ -113,142 +112,6 @@
           Talk an Expert
         </button>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close btn-squared-green"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="row">
-                    <div class="col-4 my-2">I'm a/an</div>
-                    <div class="col-8 my-2">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label=".form-select-sm example"
-                      >
-                        <option selected>Freelancer/Own Buisness</option>
-                        <option value="1">Other option</option>
-                      </select>
-                    </div>
-                    <div class="col-4 my-2">I Want</div>
-                    <div class="col-8 my-2">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label=".form-select-sm example"
-                      >
-                        <option selected>
-                          Call me to discuss our questions
-                        </option>
-                        <option value="2">
-                          Email me for digital prospectus
-                        </option>
-                        <option value="3">
-                          Meil me your full information pack
-                        </option>
-                      </select>
-                    </div>
-                    <div class="col-4 my-2">I interested</div>
-                    <div class="col-8 my-2">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label=".form-select-sm example"
-                      >
-                        <option selected>Financial Consultant</option>
-                        <option value="2">Accounting Services</option>
-                        <option value="3">Tax Services</option>
-                        <option value="4">Careers</option>
-                        <option value="5">
-                          Request Additional Informations
-                        </option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Your name *</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <label for="exampleInputEmail1" class="form-label"
-                        >Your email *</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Your email"
-                        aria-label="Your name"
-                        required
-                      />
-                    </div>
-                    <div class="col">
-                      <label for="exampleInputEmail1" class="form-label"
-                        >Your phone number *</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Your phone number"
-                        aria-label="Your Phone number"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"
-                      >Message</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Enter a message"
-                    ></textarea>
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label class="form-check-label" for="exampleCheck1">
-                      I agree to receive communications from FinLab.</label
-                    >
-                  </div>
-                  <button type="submit" class="btn btn-squared-green txt-white">
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <a class="navbar-brand" href="#">
           <button
             type="button"
@@ -259,8 +122,8 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-cart2"
               viewBox="0 0 16 16"
@@ -275,8 +138,8 @@
           <button class="btn btn-rounded-white d-none d-sm-none d-md-inline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-search"
               viewBox="0 0 16 16"
@@ -309,124 +172,12 @@
             />
           </svg>
         </button>
-        <div
-          class="offcanvas offcanvas-end"
-          data-bs-scroll="true"
-          tabindex="-1"
-          id="offcanvasRight"
-          aria-labelledby="offcanvasRightLabel"
-        >
-          <div class="offcanvas-end-header">
-            <button
-              type="button"
-              class="btn-close btn-squared-green text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-end-body">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >Homepage</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Home 1</a></li>
-                <li><a class="dropdown-item" href="#">Home 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >Who We Are</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About Us</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Our Leadership Team</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
-                <li><a class="dropdown-item" href="#">Our History</a></li>
-                <li><a class="dropdown-item" href="#">Careers</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >What We Do</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Accounting Services</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Audit & Tax Services</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Capital Investment</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Finance & Restructuring</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Financial Consultant</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Portfolio Management</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Technology Advisory</a>
-                </li>
-                <li><a class="dropdown-item" href="#">All Services Page</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-expanded="false"
-                >Case Studies</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
-                <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
-                <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog & Insights</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </div>
-        </div>
       </div>
     </ul>
     <!--TOPBAR FINISH-->
     <div class="flex-row sticky-top d-none w-100 d-lg-inline-block">
       <!--DOWNBAR STARTS-->
-      <ul
-        class="nav nav-fills nav-pills p-4 d-flex justify-content-between"
-        style="background-color: #023a51"
-      >
+      <ul class="nav nav-fills p-4 d-flex bg-dark justify-content-between">
         <button
           class="btn btn-rounded-green"
           type="button"
@@ -448,67 +199,7 @@
             />
           </svg>
         </button>
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          tabindex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div class="offcanvas-header">
-            <button
-              type="button"
-              class="btn-close btn-rounded-green text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <figure class="figure">
-              <img
-                src="/img/grattacieli.jpg"
-                class="figure-img img-fluid"
-                alt="..."
-              />
-            </figure>
-            <p>
-              Our firm provides the expert support organisations need to thrive
-              in a fast-changing world.
-            </p>
-            <p>
-              <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York
-              11226 United States. <br />
-              <strong>Phone:</strong> <a href="tel:+">0712 610 33 181</a> <br />
-              <strong>Mail:</strong> <a href="mailto:">info@example.com</a>
-            </p>
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label"
-                >Request a callback</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Your Name *"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Phone Number *"
-                required
-              />
-            </div>
-            <div class="d-grid gap-2">
-              <button class="btn btn-squared-green txt-white" type="button">
-                Request a Callback
-              </button>
-            </div>
-          </div>
-        </div>
+
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle txt-white"
@@ -588,9 +279,308 @@
         </li>
       </ul>
     </div>
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-end-header">
+        <button
+          type="button"
+          class="btn-close btn-squared-green text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-end-body">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Homepage</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home 1</a></li>
+            <li><a class="dropdown-item" href="#">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Who We Are</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Our Leadership Team</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+            <li><a class="dropdown-item" href="#">Our History</a></li>
+            <li><a class="dropdown-item" href="#">Careers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >What We Do</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Accounting Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Audit & Tax Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Capital Investment</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Finance & Restructuring</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Financial Consultant</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Portfolio Management</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Technology Advisory</a>
+            </li>
+            <li><a class="dropdown-item" href="#">All Services Page</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Case Studies</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+            <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+            <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog & Insights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close btn-squared-green"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-4 my-2">I'm a/an</div>
+                <div class="col-8 my-2">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Freelancer/Own Buisness</option>
+                    <option value="1">Other option</option>
+                  </select>
+                </div>
+                <div class="col-4 my-2">I Want</div>
+                <div class="col-8 my-2">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Call me to discuss our questions</option>
+                    <option value="2">Email me for digital prospectus</option>
+                    <option value="3">
+                      Meil me your full information pack
+                    </option>
+                  </select>
+                </div>
+                <div class="col-4 my-2">I interested</div>
+                <div class="col-8 my-2">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Financial Consultant</option>
+                    <option value="2">Accounting Services</option>
+                    <option value="3">Tax Services</option>
+                    <option value="4">Careers</option>
+                    <option value="5">Request Additional Informations</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Your name *</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Your email *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your email"
+                    aria-label="Your name"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Your phone number *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your phone number"
+                    aria-label="Your Phone number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Enter a message"
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1">
+                  I agree to receive communications from FinLab.</label
+                >
+              </div>
+              <button type="submit" class="btn btn-squared-green txt-white">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    tabindex="-1"
+    id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel"
+  >
+    <div class="offcanvas-header">
+      <button
+        type="button"
+        class="btn-close btn-rounded-green text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <figure class="figure">
+        <img
+          src="/img/grattacieli.jpg"
+          class="figure-img img-fluid"
+          alt="..."
+        />
+      </figure>
+      <p>
+        Our firm provides the expert support organisations need to thrive
+        in a fast-changing world.
+      </p>
+      <p>
+        <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York
+        11226 United States. <br />
+        <strong>Phone:</strong> <a href="tel:+">0712 610 33 181</a> <br />
+        <strong>Mail:</strong> <a href="mailto:">info@example.com</a>
+      </p>
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"
+          >Request a callback</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Your Name *"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Phone Number *"
+          required
+        />
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-squared-green txt-white" type="button">
+          Request a Callback
+        </button>
+      </div>
+    </div>
+  </div>
     <!--HEADER END-->
     <!--HERE STARTS HERO-->
-    <div class="hero" style="background-color: #023a51;">
+    <div class="hero bg-dark">
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"
@@ -609,9 +599,7 @@
             >
               <div class="card card-carousel" style="max-width: 30rem">
                 <div class="card-body">
-                  <p class="card-title fs-1">
-                    Provides Professional Services
-                  </p>
+                  <p class="card-title fs-1">Provides Professional Services</p>
                   <a href="#" class="btn btn-squared-green txt-white fs-4"
                     >Learn How We Can Help</a
                   >
@@ -630,9 +618,7 @@
             >
               <div class="card card-carousel" style="max-width: 30rem">
                 <div class="card-body">
-                  <p class="card-title fs-1">
-                    Understand Your Business Model
-                  </p>
+                  <p class="card-title fs-1">Understand Your Business Model</p>
                   <a href="#" class="btn btn-squared-green txt-white fs-4"
                     >Learn How We Can Help</a
                   >
@@ -682,8 +668,11 @@
         </button>
       </div>
       <!--CAROSELLO FINISH-->
-      <div class="container d-flex flex-column flex-md-row justify-content-around"">
-      <div class="col-4 mt-5"><p class="fs-6 txt-green" ><strong> HAVE DIRECT IMPACT</strong></p></div>
+      <div class="container d-flex flex-column flex-md-row
+      justify-content-around"">
+      <div class="col-4 mt-5">
+        <p class="fs-6 txt-green"><strong> HAVE DIRECT IMPACT</strong></p>
+      </div>
       <div class="col-8 mt-4">
         <p class="fs-5 txt-gray">
           If you want to know more about how we can support your business, give
@@ -692,246 +681,6 @@
       </div>
     </div>
 
-    <!--THREE HORIZONTAL CARDS-->
-    <div class="container my-5 pb-5 sm">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Explore Our Company</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/explore-company.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Core Value We Provide</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/core-value-we-provide.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">View Our Client Stories</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/Our-client-stories.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--HERO FINISH-->
-    <!--THREE HORIZONTAL CARDS-->
-    <div class="container my-5 pb-5 sm">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Explore Our Company</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/explore-company.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Core Value We Provide</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/core-value-we-provide.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">View Our Client Stories</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/Our-client-stories.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--HERO FINISH-->
-    <!--THREE HORIZONTAL CARDS-->
-    <div class="container my-5 pb-5 sm">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Explore Our Company</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/explore-company.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Core Value We Provide</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/core-value-we-provide.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">View Our Client Stories</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/Our-client-stories.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--HERO FINISH-->
-    <!--THREE HORIZONTAL CARDS-->
-    <div class="container my-5 pb-5 sm">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Explore Our Company</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/explore-company.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">Core Value We Provide</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/core-value-we-provide.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h4 class="card-title">View Our Client Stories</h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img
-                  src="/img/Our-client-stories.jpg"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--HERO FINISH-->
     <!--THREE HORIZONTAL CARDS-->
     <div class="container my-5 pb-5 sm">
       <div class="row">
