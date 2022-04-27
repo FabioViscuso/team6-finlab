@@ -1,3 +1,10 @@
 .card-carousel{
-    width: clamp((1.8rem, 5vw, 2.8rem)) ;
+    width: clamp(0.5rem, 50vw, 50rem) ;
+}
+.card-carousel-title{
+  font-size: clamp(0.5rem, 3vw,  30rem) ;
+}
+
+.btn-carousel-card{
+    font-size: clamp(0.5rem, 2vw,  1.5rem) ;
 }
