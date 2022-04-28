@@ -25,7 +25,749 @@
         <title>Services / Tech Advisory</title>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <!-- fixed bar wrapper -->
+        <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+            <!-- fixed bar wrapper -->
+            <div
+                class="container d-flex flex-sm-row flex-nowrap justify-content-between align-items-center"
+            >
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="../../shared/images/topbar-logo.png"
+                        alt="topbar logo"
+                    />
+                </a>
+                <!-- Links and buttons -->
+                <ul class="navbar-nav d-flex flex-row flex-nowrap">
+                    <!-- Homepage dropdown -->
+                    <li class="nav-item d-none d-xl-block">
+                        <div class="dropdown">
+                            <button
+                                class="btn-topbar dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Homepage
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Homepage 1</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Homepage 2</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End of Homepage dropdown -->
+                    <!-- Who we are dropdown -->
+                    <li class="nav-item d-none d-xl-block">
+                        <div class="dropdown">
+                            <button
+                                class="btn-topbar dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Who we are
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End of who we are dropdown -->
+                    <!-- What we do dropdown -->
+                    <li class="nav-item d-none d-xl-block">
+                        <div class="dropdown">
+                            <button
+                                class="btn-topbar dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                What we do
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End of what we do dropdown -->
+                    <!-- Case studies dropdown -->
+                    <li class="nav-item d-none d-xl-block">
+                        <div class="dropdown">
+                            <button
+                                class="btn-topbar dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Case studies
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- End of case studies dropdown -->
+                    <!-- Blog & Insights link -->
+                    <li class="nav-item me-2 d-none d-xxl-block">
+                        <a class="btn-topbar"> Blog & Insights </a>
+                    </li>
+                    <!-- Talk and experts w/text button -->
+                    <li
+                        class="btn btn-squared-green rounded-pill d-none d-md-block d-xl-none me-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#talkexpert"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chat-text-fill ms-2"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill="#FFFFFF"
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"
+                            />
+                        </svg>
+                        <span class="pe-2 txt-white txt-weight-600"
+                            >Talk an experts</span
+                        >
+                    </li>
+                    <!-- End of talk an experts w/text button -->
+                    <!-- Desktop Hamburger menu button -->
+                    <li
+                        class="btn btn-rounded-white me-3 d-none d-md-block"
+                        data-bs-target="#offcanvasMenu"
+                        data-bs-toggle="offcanvas"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill="#000000"
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </li>
+                    <!-- End of desktop hamburger button -->
+                    <!-- Mobile Hamburger menu button -->
+                    <li
+                        class="btn btn-rounded-bordered me-3 d-block d-md-none"
+                        data-bs-target="#offcanvasMenuMobile"
+                        data-bs-toggle="offcanvas"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill="#FFF"
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </li>
+                    <!-- End of hamburger button -->
+                    <!-- Talk an experts button without text -->
+                    <li
+                        class="btn btn-rounded-green d-none d-xl-block"
+                        data-bs-toggle="modal"
+                        data-bs-target="#talkexpert"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chat-text-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill="#FFFFFF"
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"
+                            />
+                        </svg>
+                    </li>
+                    <!-- End of talk an experts button without text -->
+                </ul>
+                <!-- End of inner container -->
+            </div>
+            <!-- End of wrapper -->
+        </nav>
+        <!-- End of topbar -->
+
+        <!-- Talk an experts modal -->
+        <div class="modal fade" tabindex="-1" id="talkexpert">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class="container p-4">
+                        <div
+                            class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
+                        >
+                            <div class="txt-blue">I'm a/an</div>
+                            <select
+                                class="form-select border-0 w-75"
+                                aria-label="Default select example"
+                            >
+                                <option value="freelancer" selected>
+                                    Freelancer/Own Business
+                                </option>
+                                <option value="other">Other Options</option>
+                            </select>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
+                        >
+                            <span class="txt-blue">I want</span>
+                            <select
+                                class="form-select border-0 w-75"
+                                aria-label="Default select example"
+                            >
+                                <option value="call" selected>
+                                    Call me to Discuss my Questions
+                                </option>
+                                <option value="mail-prospectus">
+                                    Email me your digital prospectus
+                                </option>
+                                <option value="mail-fullpack">
+                                    Mail me your full information pack
+                                </option>
+                            </select>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-baseline border-bottom"
+                        >
+                            <span class="txt-blue">I interested</span>
+                            <select
+                                class="form-select border-0 w-75"
+                                aria-label="Default select example"
+                            >
+                                <option value="financial-consultant">
+                                    Financial Consultant
+                                </option>
+                                <option value="accounting" selected>
+                                    Accounting Services
+                                </option>
+                                <option value="tax-services">
+                                    Tax Services
+                                </option>
+                                <option value="careers">Careers</option>
+                                <option value="additional-info">
+                                    Request additional information
+                                </option>
+                            </select>
+                        </div>
+                        <div class="mb-3 mt-5">
+                            <label
+                                for="name"
+                                class="form-label txt-blue txt-weight-600"
+                                >Your Name *</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                aria-describedby="emailHelp"
+                                placeholder="Eg: John Doe"
+                                required
+                            />
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-12 col-lg-6">
+                                <label
+                                    for="email"
+                                    class="form-label txt-blue txt-weight-600"
+                                    >Your Email *</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="name@company.com"
+                                    required
+                                />
+                            </div>
+                            <div class="mb-3 col-12 col-lg-6">
+                                <label
+                                    for="phone"
+                                    class="form-label txt-blue txt-weight-600"
+                                    >Phone Number</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="phone"
+                                    placeholder="Full Number (incl. prefix)"
+                                />
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                                >I agree to receive communications from
+                                FinLab.</label
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-squared-green">
+                            <span class="txt-white txt-weight-600 px-4"
+                                >Send Message</span
+                            >
+                        </button>
+                    </form>
+                </div>
+                <!-- end of modal-content -->
+            </div>
+            <!-- end of modal-dialog -->
+        </div>
+        <!-- End of talk an experts modal -->
+
+        <!-- Desktop Offcanvas -->
+        <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasMenu"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="offcanvas-header d-flex justify-content-end">
+                <button
+                    type="button"
+                    class="btn-close text-reset bg-green"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body container p-5">
+                <img
+                    src="../../shared/images/offcanvas-image.jpg"
+                    class="w-100 mb-5"
+                    alt=""
+                />
+                <p class="txt-gray-darker">
+                    Our firm provides the expert support organisations need to
+                    thrive in a fast-changing world.
+                </p>
+                <p class="txt-gray-darker">
+                    <span class="txt-weight-600">Address</span>: 1270 Beverley
+                    Rd Brooklyn, New York 11226 United States.
+                </p>
+                <p class="txt-gray-darker">
+                    <span class="txt-weight-600">Phone</span>:
+                    <span class="txt-green txt-weight-600"
+                        >0712 610 33 181</span
+                    >
+                </p>
+                <p class="txt-gray-darker">
+                    <span class="txt-weight-600">Mail</span>:
+                    <span class="txt-green txt-weight-600"
+                        >info@example.com</span
+                    >
+                </p>
+                <form class="mt-5">
+                    <p class="txt-gray txt-weight-600 pb-1">
+                        Request a Callback
+                    </p>
+
+                    <div class="mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Name *"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="offcanvasPhone"
+                            placeholder="Phone number *"
+                            required
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn-squared-green txt-white w-100"
+                    >
+                        Request a Callback
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- End of desktop offcanvas -->
+
+        <!-- Mobile Offcanvas -->
+        <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasMenuMobile"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="offcanvas-header d-flex justify-content-start">
+                <button
+                    type="button"
+                    class="btn-close text-reset bg-green"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body container p-5">
+                <div class="accordion" id="accordionExample">
+                    <!-- homepage accordion -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button
+                                class="accordion-button txt-blue txt-weight-600"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                Homepage
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Home 1
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Home 2
+                                    </p></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of homepage accordion -->
+                    <!-- who we are -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button
+                                class="accordion-button collapsed txt-blue txt-weight-600"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                            >
+                                Who we are
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        About Us
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Our Leadership Team
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Why Choose Us
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Our History
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Careers
+                                    </p></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of who we are accordion -->
+                    <!-- what we do accordion -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button
+                                class="accordion-button collapsed txt-blue txt-weight-600"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                            >
+                                What we do
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Accounting Services
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Audit & Tax Services
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Capital Services
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Finance & Restructuring
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Financial Consultant
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Portfolio Management
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Technology Advisory
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        All Services Page
+                                    </p></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of what we do accordion -->
+                    <!-- case studies accordion -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button
+                                class="accordion-button collapsed txt-blue txt-weight-600"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                                aria-expanded="false"
+                                aria-controls="collapseFour"
+                            >
+                                Case Studies
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Cases Grid 1
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Cases Grid 2
+                                    </p></a
+                                >
+                                <a href=""
+                                    ><p
+                                        class="txt-blue txt-weight-600 pb-3 border-bottom"
+                                    >
+                                        Cases Grid 3
+                                    </p></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of what we do accordion -->
+                </div>
+                <!-- end of accordion -->
+                <a href="#"
+                    ><button
+                        class="w-100 bg-white border-0 border-bottom my-3 pb-3 txt-blue txt-weight-600"
+                    >
+                        Blog & Insights
+                    </button></a
+                >
+                <a href="#"
+                    ><button
+                        class="w-100 bg-white border-0 border-bottom mb-3 pb-3 txt-blue txt-weight-600"
+                    >
+                        Shop
+                    </button></a
+                >
+                <a href="#"
+                    ><button
+                        class="w-100 bg-white border-0 border-bottom mb-3 pb-3 txt-blue txt-weight-600"
+                    >
+                        Contact Us
+                    </button></a
+                >
+            </div>
+        </div>
+        <!-- End of mobile offcanvas -->
+
+        <!--         <div class="container-fluid bg-dark pt-5">
+                    <div class="container">
+                        <div class="row d-flex">
+                            <div class="d-flex flex-column col-lg-6">
+                                <span class="txt-green txt-weight-600"
+                                    >Technology Advisory</span
+                                >
+                                <h1 class="txt-white txt-weight-700">
+                                    Technology Advisory Services
+                                </h1>
+                            </div>
+                            <div class="d-flex flex-column col-lg-6">
+                                <span class="txt-white-trans"
+                                    >Technology Advisory is a client-driven approach
+                                    with a suite of IT support services, including
+                                    professional advice backed by world-class expertise
+                                    and in line with the changing technology trends. Our
+                                    Advisers are available to help you make strategic
+                                    decisions whenever you come to a crossroads.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
         <!-- Bootstrap JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
