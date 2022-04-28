@@ -1,0 +1,3 @@
+.card-carousel{
+    width: clamp((1.8rem, 5vw, 2.8rem)) ;
+}
