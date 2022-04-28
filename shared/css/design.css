@@ -5,6 +5,7 @@
 
 body * {
     font-family: "Manrope", sans-serif !important;
+    color: #5c667d !important;
 }
 
 .bg-dark {
@@ -28,7 +29,7 @@ body * {
     color: #5c667d !important;
 }
 .txt-blue {
-    color: #023a51 !important;
+    color: #203138 !important;
 }
 .txt-green {
     color: #2cbc63 !important;

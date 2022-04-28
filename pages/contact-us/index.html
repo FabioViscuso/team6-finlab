@@ -145,6 +145,87 @@
                <!--------------x---------  Other nave links ----------x---->
             </div>
           </nav>
+
+          <!------------------- modal talk to an expert  ------------------------------>
+
+        <div class="modal fade mt-3" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body  ">
+                  <!----------------  Option Area  -------------------->
+                <div class="container">
+                  <div class="row py-3 select-underline">
+                    <div class="col-3"><p class="txt-gray-darker">I'm a/an</p> </div>
+                    <div class="col-9">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Freelancer /Own Business</option>
+                        <option value="1">Other Options</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row py-3 select-underline">
+                    <div class="col-3 "><p class="txt-gray-darker"> I Want</p></div>
+                    <div class="col-9 ">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Call me to Discuss my Questions</option>
+                        <option value="1">Email me your digital prospectus</option>
+                        <option value="1">Mail me your full information pack</option>
+                      </select>
+                    </div>
+                    </div>
+                    <div class="row py-3 select-underline ">
+                    <div class="col-3 d-flex align-items-center justify-content-center"><p class="txt-gray-darker text-center">I interested</p> </div>
+                    <div class="col-9 text-center">
+                      <select class="form-select " aria-label="Default select example">
+                        <option selected>Finacial Consultant</option>
+                        <option value="1">Accounting services</option>
+                        <option value="1">Tax services</option>
+                        <option value="1">Careers</option>
+                        <option value="1">Request Additional Information</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+             <!--------x--------  Option Area  -----------x--------->
+              <!----------------  Form section   -------------------->
+              <form class="row g-3 my-3">
+                <div class="col-12">
+                  <label for="inputEmail4" class="form-label txt-gray-darker ">Your Name*</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Eg: Jhon Doe" required>
+                </div>
+                <div class="col-6">
+                  <label for="inputemail" class="form-label txt-gray-darker ">Your Email*</label>
+                  <input type="email" class="form-control" id="inputemail" placeholder="name@company.com" required>
+                </div>
+                <div class="col-6">
+                  <label for="inputtel" class="form-label txt-gray-darker ">Phone Number</label>
+                  <input type="tel" class="form-control" id="inputtel" placeholder="Full Number (incl.prefix)">
+                </div>
+                <div class="col-12">
+                  <label for="exampleFormControlTextarea1" class="form-label txt-gray-darker ">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                     I agree to recieve communications from FinLab
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-success ">Send Message</button>
+                </div>
+              </form>
+                </div> 
+              </div>
+            </div>
+          </div>
+        <!-----------x-------- model talk to an expert  ----------x------------>
         <!-- Bootstrap JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

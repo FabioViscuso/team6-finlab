@@ -52,3 +52,14 @@ a {
     height: 3px;
     background-color: white;
 }
+
+/* modal section */
+.card, .form-select,
+.form-select:focus,.modal-header{
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.select-underline {
+    border-bottom: 1px solid #9ea4b1;
+}
