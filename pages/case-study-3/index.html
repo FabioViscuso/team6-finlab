@@ -433,21 +433,80 @@
 
 <!---MODALE-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<div class="modal-body">
-  ...
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-  <button type="button" class="btn btn-primary">Save changes</button>
-</div>
-</div>
-</div>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content container pb-2">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!--FORM MODALE-->
+
+            <form>
+                <div class="modal-body d-flex justify-content-between">
+                    <span>I'm a/an</span>
+                    <select class="form-select form-select-sm py-2 border-top-0 w-75"
+                        aria-label="Default select example">
+                        <option selected>Freelencer Own Business</option>
+                        <option value="1">Other Options</option>
+                    </select>
+                </div>
+
+                <div class="modal-body d-flex justify-content-between">
+                    <span>I Want</span>
+                    <select class="form-select py-2 border-top-0 w-75" aria-label="Default select example">
+                        <option selected>Call me to Discuss my Questions</option>
+                        <option value="1">Email me your digital prospectus</option>
+                        <option value="1">Mail me your full information pack </option>
+                    </select>
+                </div>
+
+
+                <div class="modal-body d-flex justify-content-between">
+
+                    <span>I interested</span>
+                    <select class="form-select py-2 border-top-0 w-75" aria-label="Default select example">
+                        <option selected>Financial Consultant</option>
+                        <option value="1">Accounting Services</option>
+                        <option value="1">Careers </option>
+                        <option value="1">Request Additional Information</option>
+                    </select>
+                </div>
+
+
+                <div class="mb-3 ">
+                    <label for="exampleInputEmail1" class="form-label">Your Name * </label>
+                    <input type="text" class="form-control px-2 py-2 my-2" placeholder="Eg:Hohn Doe"
+                        id="exampleInputText" aria-describedby="TextlHelp">
+                    <div id="textlHelp" class="form-text"></div>
+                </div>
+                <div class="row">
+                    <div class="name d-flex flex-column col-6">
+                        <span>Your Email *</span>
+                        <input type="email" class="px-2 py-2 my-2" placeholder="Your Email *" required>
+                    </div>
+
+                    <div class="mail d-flex flex-column col-6">
+                        <span>Your Phone Number *</span>
+                        <input type="tel" class="px-2 py-2 my-2" placeholder="Phone Number *" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                        placeholder="Enter Message">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree to receive communications from
+                        FinLab.</label>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+
+        </div>
+    </div>
 </div>
 
 
