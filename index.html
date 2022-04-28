@@ -475,14 +475,14 @@
               </div>
 
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
+                <label for="exampleInputName" class="form-label"
                   >Your name *</label
                 >
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  id="exampleInputName"
+                  aria-describedby="nameHelp"
                   placeholder="Your name"
                   required
                 />
@@ -493,15 +493,15 @@
                     >Your email *</label
                   >
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     placeholder="Your email"
-                    aria-label="Your name"
+                    aria-label="Your email"
                     required
                   />
                 </div>
                 <div class="col">
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label for="exampleInputNumber" class="form-label"
                     >Your phone number *</label
                   >
                   <input
@@ -529,6 +529,7 @@
                   type="checkbox"
                   class="form-check-input"
                   id="exampleCheck1"
+                  required
                 />
                 <label class="form-check-label" for="exampleCheck1">
                   I agree to receive communications from FinLab.</label
@@ -552,7 +553,7 @@
       <div class="offcanvas-header">
         <button
           type="button"
-          class="btn-close btn-rounded-green text-reset"
+          class="btn-close btn-squared-green text-reset"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
@@ -576,13 +577,15 @@
           <strong>Mail:</strong> <a href="mailto:">info@example.com</a>
         </p>
         <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
+          <label for="exampleInput" class="form-label"
             >Request a callback</label
           >
+          <label for="exampleInputText" class="form-label"></label>
           <input
             type="text"
             class="form-control"
-            id="formGroupExampleInput"
+            id="exampleInputName"
+            aria-describedby="nameHelp"
             placeholder="Your Name *"
             required
           />
@@ -591,13 +594,12 @@
           <input
             type="text"
             class="form-control"
-            id="formGroupExampleInput"
             placeholder="Phone Number *"
             required
           />
         </div>
         <div class="d-grid gap-2">
-          <button class="btn btn-squared-green txt-white" type="button">
+          <button class="btn btn-squared-green txt-white" type="submit">
             Request a Callback
           </button>
         </div>
