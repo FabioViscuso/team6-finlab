@@ -1,10 +1,33 @@
 @import '../../shared/css/design.css';
 
+/* general styling */
+a {
+    text-decoration: none;
+}
+
+/* header section */
 .cart {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: white;
+}
+.dropdown-menu li {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #9ea4b1;
+}
+.dropdown-menu li::before {
+  content: '•';
+  font-size: 2rem;
+  color: #2CBC63;
+  display: inline;
+}
+.nav-menu{
+    font-weight: 600;
+    font-size: 1rem;
 }
 /* first navabr humburger menu  */
 .navbar-light,
