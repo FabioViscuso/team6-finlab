@@ -10,3 +10,7 @@
         #fff 100%
     );
 }
+
+.accordion a {
+    text-decoration: none;
+}
