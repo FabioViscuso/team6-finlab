@@ -3,10 +3,10 @@
 }
 
 .card-carousel{
-    width: clamp(0.8rem, 60vw, 65rem) ;
+    width: clamp(0.8rem, 50vw, 65rem) ;
 }
 .card-carousel-title{
-  font-size: clamp(0.5rem, 4vw,  60rem) ;
+  font-size: clamp(0.5rem, 3.5vw,  40rem) ;
 }
 
 .btn-carousel-card{
