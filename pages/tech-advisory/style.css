@@ -44,3 +44,23 @@
     width: clamp(30px, 14vw, 80px);
     height: auto;
 }
+
+.testimonials-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-towhite-btm {
+    background-image: linear-gradient(to bottom, #e0ecf0a3, #fff);
+}
+
+.bg-towhite-top {
+    background-image: linear-gradient(to top, #e0ecf0a3, #fff);
+}
+
+.testimonial {
+    width: 8rem;
+    height: 8rem;
+    background-color: #023a51;
+    border-radius: 50%;
+}
