@@ -72,3 +72,6 @@ section{
 }
 
 
+.card_dimension{
+    width: clamp(20%, 20vw,80%);
+}
