@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+.navbardark{
+    background-color:#023a51 
+}
+.prova{
+    border: 1px solid black;
+}
+
+.bianco{
+    border: 1px solid white;
+
+}
+body{
+    height:100vh;
+    width:100vw;
+}
+
+.hamburger{
+    width: max-content;
+}
+.f-bianco{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+
+.f-normal{
+    color: white;
+    font-family: 'Manrope';
+    font-size: 16px;
+
+}
+.font{
+    font-size: 60px;
+}
+
+.imm{
+    width: 294px;
+    height: 147px;
+    background-image: url(/pages/case-study-3/img/c4.jpg);
+    background-position: center ;
+    background-size: cover;
+}
+
+section{
+   background-image: url(/pages/case-study-3/img/sfondo.svg); 
+   background-position: center;
+   background-size: cover;
+}
+
