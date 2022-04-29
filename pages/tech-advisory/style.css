@@ -14,3 +14,33 @@
 .accordion a {
     text-decoration: none;
 }
+
+.green-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2cbc63;
+    margin: 0 5px 2px 0;
+}
+
+.hero-card {
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero-card-bg {
+    background-image: linear-gradient(to bottom, #023a51 70%, #fff 70%);
+}
+
+.hero-card__infocard {
+    border-top: 5px solid #2cbc63;
+    max-width: 60%;
+    border-radius: 2px;
+}
+
+.services-logo {
+    width: clamp(30px, 14vw, 80px);
+    height: auto;
+}
