@@ -63,6 +63,18 @@
     height: 8rem;
     background-color: #023a51;
     border-radius: 50%;
+    background-position: center;
+    background-size: 90%;
+}
+
+.testimonial {
+    background-image: url(images/testimonial.jpg);
+    filter: grayscale();
+}
+
+.testimonial:hover,
+.testimonial:focus {
+    filter: none;
 }
 
 .bg-azure {
