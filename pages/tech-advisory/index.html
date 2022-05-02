@@ -53,7 +53,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="homeDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -61,7 +61,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="homeDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">
@@ -83,7 +83,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="whoweareDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -91,7 +91,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="whoweareDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -116,7 +116,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="whatwedoDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -124,7 +124,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="whatwedoDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -149,7 +149,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="casestudiesDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -157,7 +157,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="casestudiesDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -339,7 +339,7 @@
                         </div>
                         <div class="mb-3 mt-5">
                             <label
-                                for="name"
+                                for="offcanvasFormName"
                                 class="form-label txt-blue txt-weight-600"
                             >
                                 Your Name *
@@ -347,8 +347,8 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                id="name"
-                                aria-describedby="emailHelp"
+                                id="offcanvasFormName"
+                                aria-describedby="offcanvas 1 form name"
                                 placeholder="Eg: John Doe"
                                 required
                             />
@@ -356,7 +356,7 @@
                         <div class="row">
                             <div class="mb-3 col-12 col-lg-6">
                                 <label
-                                    for="email"
+                                    for="offcanvasFormEmail"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Your Email *
@@ -364,14 +364,14 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="email"
+                                    id="offcanvasFormEmail"
                                     placeholder="name@company.com"
                                     required
                                 />
                             </div>
                             <div class="mb-3 col-12 col-lg-6">
                                 <label
-                                    for="phone"
+                                    for="modalFormPhone"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Phone Number
@@ -379,18 +379,37 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="phone"
+                                    id="modalFormPhone"
                                     placeholder="Full Number (incl. prefix)"
                                 />
                             </div>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label
+                                for="modalFormMessage"
+                                class="form-label txt-blue txt-weight-600"
+                            >
+                                Message
+                            </label>
+                            <textarea
+                                type="text"
+                                class="form-control"
+                                id="modalFormMessage"
+                                placeholder="Enter Message"
+                                cols="30"
+                                rows="4"
+                            ></textarea>
                         </div>
                         <div class="mb-3 form-check">
                             <input
                                 type="checkbox"
                                 class="form-check-input"
-                                id="exampleCheck1"
+                                id="modalFormCommunicationsAgreement"
                             />
-                            <label class="form-check-label" for="exampleCheck1">
+                            <label
+                                class="form-check-label"
+                                for="modalFormCommunicationsAgreement"
+                            >
                                 I agree to receive communications from FinLab.
                             </label>
                         </div>
@@ -1502,7 +1521,7 @@
                             </div>
                             <div class="mb-3 mt-5 text-start">
                                 <label
-                                    for="name"
+                                    for="techAdvFormName"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Your Name *
@@ -1510,7 +1529,7 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="name"
+                                    id="techAdvFormName"
                                     aria-describedby="emailHelp"
                                     placeholder="Eg: John Doe"
                                     required
@@ -1519,7 +1538,7 @@
                             <div class="row">
                                 <div class="mb-3 col-12 col-lg-6 text-start">
                                     <label
-                                        for="email"
+                                        for="techAdvFormEmail"
                                         class="form-label txt-blue txt-weight-600"
                                     >
                                         Your Email *
@@ -1527,14 +1546,14 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="email"
+                                        id="techAdvFormEmail"
                                         placeholder="name@company.com"
                                         required
                                     />
                                 </div>
                                 <div class="mb-3 col-12 col-lg-6 text-start">
                                     <label
-                                        for="phone"
+                                        for="techAdvFormPhone"
                                         class="form-label txt-blue txt-weight-600"
                                     >
                                         Phone Number
@@ -1542,39 +1561,39 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="phone"
+                                        id="techAdvFormPhone"
                                         placeholder="Full Number (incl. prefix)"
                                     />
                                 </div>
                             </div>
-                            <div>
-                                <div class="mb-3 text-start">
-                                    <label
-                                        for="Message"
-                                        class="form-label txt-blue txt-weight-600"
-                                    >
-                                        Message
-                                    </label>
-                                    <textarea
-                                        type="text"
-                                        class="form-control"
-                                        id="Message"
-                                        placeholder="Enter Message"
-                                        cols="30"
-                                        rows="4"
-                                    ></textarea>
-                                </div>
+
+                            <div class="mb-3 text-start">
+                                <label
+                                    for="techAdvFormMessage"
+                                    class="form-label txt-blue txt-weight-600"
+                                >
+                                    Message
+                                </label>
+                                <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="techAdvFormMessage"
+                                    placeholder="Enter Message"
+                                    cols="30"
+                                    rows="4"
+                                ></textarea>
                             </div>
+
                             <div class="mb-3 form-check">
                                 <input
                                     type="checkbox"
                                     class="form-check-input"
-                                    id="exampleCheck1"
+                                    id="techAdvFormAgreement"
                                     required
                                 />
                                 <label
                                     class="form-check-label"
-                                    for="exampleCheck1"
+                                    for="techAdvFormAgreement"
                                 >
                                     I agree to receive communications from
                                     FinLab.
@@ -1589,10 +1608,7 @@
                                 </span>
                             </button>
                         </form>
-                        <div
-                            class="d-none d-lg-block col-lg-6 p-0"
-                            style="object-fit: cover"
-                        >
+                        <div class="d-none d-lg-block col-lg-6 p-0">
                             <img
                                 src="images/form-img.jpg"
                                 class="w-100 p-0 h-100"
@@ -1603,6 +1619,10 @@
                 </div>
             </div>
         </section>
+        <!-- Footer -->
+        <footer>
+            <div class="row"></div>
+        </footer>
         <!-- Bootstrap JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
