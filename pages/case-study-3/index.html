@@ -798,12 +798,12 @@
             </p>
             <p><strong>Phone:</strong> 0712 610 33 181</p>
             <p class=""><strong>Mail:</strong>info@example.com</p>
-            <div class="form d-flex flex-column">
+            <form class=" d-flex flex-column">
                 <p><strong>Request a Callback</strong></p>
-                <input type="text" class="mx-2 my-2" placeholder="Your Name *" requered>
-                <input type="tel" class="mx-2 my-2" placeholder="Your Phone *" requered>
-                <button type="button" class="btn btn-success py-2">Request a Callback </button>
-            </div>
+                <input type="text" class="mx-2 my-2" placeholder="Your Name *" required>
+                <input type="tel" class="mx-2 my-2" placeholder="Your Phone *" required>
+                <button type="submit" class="btn btn-success py-2">Request a Callback </button>
+            </form>
         </div>
     </div>
 
@@ -862,8 +862,8 @@
 
                     <div class="mb-3 ">
                         <label for="exampleInputEmail1" class="form-label">Your Name * </label>
-                        <input type="text" class="form-control px-2 py-2 my-2" placeholder="Eg:Hohn Doe"
-                            id="exampleInputText" aria-describedby="TextlHelp">
+                        <input type="text" class="form-control px-2 py-2 my-2 " placeholder="Eg:Hohn Doe"required
+                            id="exampleInputText" aria-describedby="TextlHelp ">
                         <div id="textlHelp" class="form-text"></div>
                     </div>
                     <div class="row">
