@@ -75,3 +75,20 @@ section{
 .card_dimension{
     width: clamp(20%, 20vw,80%);
 }
+
+.bg-input{
+    background-color: transparent;
+}
+.borderInput{
+    border-bottom: 2px solid #2cbc63;
+}
+.buttonfooter{
+    background-color: transparent;
+}
+.bordertopfooter{
+    border-top: 1px solid gray;
+}
+
+
+
+
