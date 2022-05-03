@@ -1,0 +1,27 @@
+.logo-responsive{
+  width: clamp(8rem, 20vw,  12rem);
+}
+
+.card-carousel{
+    width: clamp(0.8rem, 50vw, 65rem) ;
+}
+.card-carousel-title{
+  font-size: clamp(0.5rem, 3.5vw,  40rem) ;
+}
+
+.btn-carousel-card{
+    font-size: clamp(0.2rem, 2.5vw,  1.5rem) ;
+}
+
+.txt-monkey{
+  font-size: clamp(0.8rem, 2.3vw,  8rem) ;
+}
+
+.txt-choose-us{
+  font-size: clamp(1rem, 3vw,  9rem)
+}
+
+.link-monkey{
+  text-decoration: none;
+  color: black;
+}

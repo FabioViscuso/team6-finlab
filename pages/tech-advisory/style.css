@@ -1,0 +1,82 @@
+.btn-rounded-bordered {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        at center,
+        transparent 62%,
+        #fff 70%,
+        #fff 100%
+    );
+}
+
+.accordion a {
+    text-decoration: none;
+}
+
+.green-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2cbc63;
+    margin: 0 5px 2px 0;
+}
+
+.hero-card {
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero-card-bg {
+    background-image: linear-gradient(to bottom, #023a51 70%, #fff 70%);
+}
+
+.hero-card__infocard {
+    border-top: 5px solid #2cbc63;
+    max-width: 60%;
+    border-radius: 2px;
+}
+
+.services-logo {
+    width: clamp(30px, 14vw, 80px);
+    height: auto;
+}
+
+.testimonials-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-towhite-btm {
+    background-image: linear-gradient(to bottom, #e0ecf0a3, #fff);
+}
+
+.bg-towhite-top {
+    background-image: linear-gradient(to top, #e0ecf0a3, #fff);
+}
+
+.testimonial {
+    width: 8rem;
+    height: 8rem;
+    background-color: #023a51;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 90%;
+}
+
+.testimonial {
+    background-image: url(images/testimonial.jpg);
+    filter: grayscale();
+}
+
+.testimonial:hover,
+.testimonial:focus {
+    filter: none;
+}
+
+.bg-azure {
+    background-color: #e0ecf0a3;
+}
