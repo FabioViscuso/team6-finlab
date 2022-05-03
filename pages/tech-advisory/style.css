@@ -25,6 +25,7 @@
 }
 
 .hero-card {
+    width: -moz-fit-content;
     width: fit-content;
     max-width: 90%;
     margin: 0 auto;
@@ -79,4 +80,11 @@
 
 .bg-azure {
     background-color: #e0ecf0a3;
+}
+
+.footer-cta {
+    background-image: url(../../shared/images/finlab-footer.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
