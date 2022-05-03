@@ -482,14 +482,15 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="exampleInputEmail1" class="form-label">
+                  <label for="exampleInputEmailModal" class="form-label">
                     Your email *
                   </label>
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
+                    id="exampleInputEmailModal"
                     placeholder="Your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     aria-label="Your email"
                     required
                   />
@@ -510,24 +511,24 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">
+                <label for="exampleFormControlTextareaModal" class="form-label">
                   Message
                 </label>
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="exampleFormControlTextareaModal"
                   rows="3"
-                  placeholder="Enter a message"
+                  placeholder="Enter a message..."
                 ></textarea>
               </div>
               <div class="mb-3 form-check">
                 <input
                   type="checkbox"
                   class="form-check-input"
-                  id="exampleCheck1"
+                  id="exampleCheckModal"
                   required
                 />
-                <label class="form-check-label" for="exampleCheck1">
+                <label class="form-check-label" for="exampleCheckModal">
                   I agree to receive communications from FinLab.
                 </label>
               </div>
@@ -1544,6 +1545,7 @@
                       class="form-control bg-dark border-0 txt-white"
                       id="validationCustomUsernameFooter"
                       aria-describedby="inputGroupPrepend"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                       placeholder="Your email address"
                       required
                     />
