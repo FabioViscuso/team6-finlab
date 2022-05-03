@@ -8,7 +8,7 @@
 
 
 .navbardark{
-    background-color:#023a51 
+    background-color:#023a51 !important
 }
 .prova{
     border: 1px solid black;
@@ -93,6 +93,9 @@ section{
     background-image: url(/shared/images/finlab-footer.png);
 }
 
+.blu{
 
+    background-color: #023A51;
+}
 
 
