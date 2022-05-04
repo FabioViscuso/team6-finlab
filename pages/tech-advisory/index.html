@@ -280,7 +280,7 @@
         <div class="modal fade" tabindex="-1" id="talkexpert">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form class="container p-4">
+                    <form action="#" class="container p-4">
                         <div
                             class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
                         >
@@ -350,6 +350,7 @@
                                 id="offcanvasFormName"
                                 aria-describedby="offcanvas 1 form name"
                                 placeholder="Eg: John Doe"
+                                pattern="^(\w\w+)\s(\w+)$"
                                 required
                             />
                         </div>
@@ -366,6 +367,7 @@
                                     class="form-control"
                                     id="offcanvasFormEmail"
                                     placeholder="name@company.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     required
                                 />
                             </div>
@@ -381,6 +383,7 @@
                                     class="form-control"
                                     id="modalFormPhone"
                                     placeholder="Full Number (incl. prefix)"
+                                    pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                                 />
                             </div>
                         </div>
@@ -405,6 +408,7 @@
                                 type="checkbox"
                                 class="form-check-input"
                                 id="modalFormCommunicationsAgreement"
+                                required
                             />
                             <label
                                 class="form-check-label"
@@ -469,7 +473,7 @@
                         info@example.com
                     </span>
                 </p>
-                <form class="mt-5">
+                <form action="#" class="mt-5">
                     <p class="txt-gray txt-weight-600 pb-1">
                         Request a Callback
                     </p>
@@ -481,6 +485,7 @@
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
                             placeholder="Name *"
+                            pattern="^(\w\w+)\s(\w+)$"
                             required
                         />
                     </div>
@@ -490,6 +495,7 @@
                             class="form-control"
                             id="offcanvasPhone"
                             placeholder="Phone number *"
+                            pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                             required
                         />
                     </div>
@@ -1462,7 +1468,7 @@
                 </p>
                 <div class="container">
                     <div class="row">
-                        <form class="p-5 bg-azure col-12 col-lg-6">
+                        <form action="#" class="p-5 bg-azure col-12 col-lg-6">
                             <div
                                 class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
                             >
@@ -1530,8 +1536,9 @@
                                     type="text"
                                     class="form-control"
                                     id="techAdvFormName"
-                                    aria-describedby="emailHelp"
+                                    aria-describedby="form name field"
                                     placeholder="Eg: John Doe"
+                                    pattern="^(\w\w+)\s(\w+)$"
                                     required
                                 />
                             </div>
@@ -1548,6 +1555,7 @@
                                         class="form-control"
                                         id="techAdvFormEmail"
                                         placeholder="name@company.com"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                         required
                                     />
                                 </div>
@@ -1563,6 +1571,7 @@
                                         class="form-control"
                                         id="techAdvFormPhone"
                                         placeholder="Full Number (incl. prefix)"
+                                        pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                                     />
                                 </div>
                             </div>
@@ -1767,7 +1776,7 @@
                         </li>
                     </ul>
                     <form
-                        action=""
+                        action="#"
                         class="col-12 col-lg-4 mt-5 mt-lg-0 text-start"
                     >
                         <p class="txt-gray">
@@ -1782,6 +1791,7 @@
                                 placeholder="Your email address"
                                 aria-label=""
                                 aria-describedby="button-addon2"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 required
                             />
                             <button
