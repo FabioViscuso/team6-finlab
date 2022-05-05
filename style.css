@@ -25,3 +25,10 @@
   text-decoration: none;
   color: black;
 }
+
+.footer-cta {
+  background-image: url(../../shared/images/finlab-footer.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
