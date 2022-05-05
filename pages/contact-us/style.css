@@ -206,3 +206,20 @@ button {
     height: 100%;
     justify-content: space-between;
 }
+
+/* form section */
+.contact-form {
+    background-color: #eff5f7;
+}
+.select-underline {
+    --bs-gutter-x:0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ced4da;
+}
+.form-items {
+    padding-left: 0;
+}
+.main-color{
+    color:#023A51;
+}
