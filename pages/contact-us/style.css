@@ -223,3 +223,9 @@ button {
 .main-color{
     color:#023A51;
 }
+.bg-form{
+    background-image: url(img/contact-form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
