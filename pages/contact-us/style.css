@@ -68,6 +68,18 @@ button {
     box-shadow:none; 
  }
 
+ .list-group-item  {
+    background-color: transparent;
+    border: none;
+}
+.input-group {
+    background-color: transparent;
+    border-bottom: 2px solid  #fffa ;
+}
+input {
+    background-color: transparent;
+}
+
 /* header section */
 .cart {
     width: 40px;
@@ -204,4 +216,10 @@ footer {
     background-size: 50%;
     background-repeat: no-repeat;
     background-color: #023A51;
+}
+
+
+.footer-form {
+    background-color: transparent;
+    border: none;
 }
