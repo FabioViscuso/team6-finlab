@@ -28,6 +28,14 @@ class CallbackRequest extends ContactRequest {
     }
 }
 
+class NewsletterRequest extends ContactRequest {
+    constructor(fullName, phone, email) {
+        super(fullName, phone, email);
+        this.firstName = undefined;
+        this.lastName = undefined;
+    }
+}
+
 const offcanvBtn = document.getElementById("offcanvasFormSubmit");
 offcanvBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -74,4 +82,17 @@ techAdvFormBtn.addEventListener("click", (event) => {
     );
     console.log(techAdvRequest);
     console.log(techAdvRequest.toJson());
+});
+
+const newsletterBtn = document.getElementById("newsletterSubmit");
+
+newsletterBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const newsletterReq = new NewsletterRequest(
+        "",
+        undefined,
+        document.getElementById("newsletterApply").value
+    );
+    console.log(newsletterReq);
+    console.log(newsletterReq.toJson());
 });
