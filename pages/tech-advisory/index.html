@@ -286,6 +286,7 @@
                         >
                             <div class="txt-blue">I'm a/an</div>
                             <select
+                                id="modalUserJob"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -300,6 +301,7 @@
                         >
                             <span class="txt-blue">I want</span>
                             <select
+                                id="modalUserContactMethod"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -319,6 +321,7 @@
                         >
                             <span class="txt-blue">I interested</span>
                             <select
+                                id="modalUserNeededServ"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -339,7 +342,7 @@
                         </div>
                         <div class="mb-3 mt-5">
                             <label
-                                for="offcanvasFormName"
+                                for="modalFormName"
                                 class="form-label txt-blue txt-weight-600"
                             >
                                 Your Name *
@@ -347,8 +350,8 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                id="offcanvasFormName"
-                                aria-describedby="offcanvas 1 form name"
+                                id="modalFormName"
+                                aria-describedby="modal 1 form name"
                                 placeholder="Eg: John Doe"
                                 pattern="^(\w\w+)\s(\w+)$"
                                 required
@@ -357,7 +360,7 @@
                         <div class="row">
                             <div class="mb-3 col-12 col-lg-6">
                                 <label
-                                    for="offcanvasFormEmail"
+                                    for="modalFormEmail"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Your Email *
@@ -365,7 +368,7 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="offcanvasFormEmail"
+                                    id="modalFormEmail"
                                     placeholder="name@company.com"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     required
@@ -417,7 +420,11 @@
                                 I agree to receive communications from FinLab.
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-squared-green">
+                        <button
+                            id="modalFormSubmit"
+                            type="submit"
+                            class="btn btn-squared-green"
+                        >
                             <span class="txt-white txt-weight-600 px-4">
                                 Send Message
                             </span>
@@ -482,8 +489,8 @@
                         <input
                             type="text"
                             class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
+                            id="offcanvasName"
+                            aria-describedby="form name"
                             placeholder="Name *"
                             pattern="^(\w\w+)\s(\w+)$"
                             required
@@ -500,6 +507,7 @@
                         />
                     </div>
                     <button
+                        id="offcanvasFormSubmit"
                         type="submit"
                         class="btn btn-squared-green txt-white w-100"
                     >
@@ -1474,6 +1482,7 @@
                             >
                                 <div class="txt-blue">I'm a/an</div>
                                 <select
+                                    id="techAdvUserJob"
                                     class="form-select border-0 w-75 bg-azure"
                                     aria-label="Default select example"
                                 >
@@ -1488,6 +1497,7 @@
                             >
                                 <span class="txt-blue">I want</span>
                                 <select
+                                    id="techAdvUserContactMethod"
                                     class="form-select border-0 w-75 bg-azure"
                                     aria-label="Default select example"
                                 >
@@ -1507,6 +1517,7 @@
                             >
                                 <span class="txt-blue">I interested</span>
                                 <select
+                                    id="techAdvUserNeededServ"
                                     class="form-select border-0 w-75 bg-azure"
                                     aria-label="Default select example"
                                 >
@@ -1609,6 +1620,7 @@
                                 </label>
                             </div>
                             <button
+                                id="techAdvFormSubmit"
                                 type="submit"
                                 class="btn btn-squared-green w-100"
                             >
