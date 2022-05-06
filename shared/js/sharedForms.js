@@ -1,5 +1,5 @@
 /* Main form class */
-export class ContactRequest {
+class ContactRequest {
     constructor(
         fullName,
         phone,
@@ -25,14 +25,14 @@ export class ContactRequest {
 }
 
 /* Offcanvas callback form class */
-export class CallbackRequest extends ContactRequest {
+class CallbackRequest extends ContactRequest {
     constructor(fullName, phone) {
         super(fullName, phone);
     }
 }
 
 /* Footer newsletter form class */
-export class NewsletterRequest extends ContactRequest {
+class NewsletterRequest extends ContactRequest {
     constructor(fullName, phone, email) {
         super(fullName, phone, email);
         this.firstName = undefined;
@@ -41,7 +41,7 @@ export class NewsletterRequest extends ContactRequest {
 }
 
 /* Offcanvas form submit button */
-export const offcanvBtn = document.getElementById("offcanvasFormSubmit");
+const offcanvBtn = document.getElementById("offcanvasFormSubmit");
 /* Offcanvas form submit logic */
 offcanvBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -55,7 +55,7 @@ offcanvBtn.addEventListener("click", (event) => {
 });
 
 /* Modal form submit button */
-export const modalBtn = document.getElementById("modalFormSubmit");
+const modalBtn = document.getElementById("modalFormSubmit");
 /* Modal form submit logic */
 modalBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -75,7 +75,7 @@ modalBtn.addEventListener("click", (event) => {
 });
 
 /* Newsletter form submit button */
-export const newsletterBtn = document.getElementById("newsletterSubmit");
+const newsletterBtn = document.getElementById("newsletterSubmit");
 /* Newsletter form submit logic */
 newsletterBtn.addEventListener("click", (event) => {
     event.preventDefault();
