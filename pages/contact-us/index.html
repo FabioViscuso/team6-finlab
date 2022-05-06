@@ -27,7 +27,7 @@
     <body>
            <!---------------------- Header section ---------------------->
      <!---------------------- First navbar ---------------------->
-      <nav class="navbar navbar-expand-lg navbar-light  d-flex flex-wrap py-4 bg-dark ">
+      <nav class="navbar navbar-expand-lg navbar-light  d-flex flex-nowrap py-4 bg-dark ">
         <div class="container-md ">
           <a class="navbar-brand" href="#"><img src="../../shared/images/topbar-logo.png " class="img-fluid" alt=""></a>
     <!---------------------- Social media Icons ----------------------->
@@ -148,7 +148,7 @@
 
           <!------------------- modal talk to an expert  ------------------------------>
 
-        <div class="modal fade mt-3" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
@@ -159,18 +159,18 @@
                   <!----------------  Option Area  -------------------->
                 <div class="container">
                   <div class="row py-3 select-underline">
-                    <div class="col-3"><p class="txt-gray-darker">I'm a/an</p> </div>
+                    <div class="col-3 txt-gray-darker">I'm a/an </div>
                     <div class="col-9">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select main-color" aria-label="Default select example">
                         <option selected>Freelancer /Own Business</option>
                         <option value="1">Other Options</option>
                       </select>
                     </div>
                   </div>
                   <div class="row py-3 select-underline">
-                    <div class="col-3 "><p class="txt-gray-darker"> I Want</p></div>
+                    <div class="col-3 txt-gray-darker "> I Want</div>
                     <div class="col-9 ">
-                      <select class="form-select" aria-label="Default select example">
+                      <select class="form-select main-color" aria-label="Default select example">
                         <option selected>Call me to Discuss my Questions</option>
                         <option value="1">Email me your digital prospectus</option>
                         <option value="1">Mail me your full information pack</option>
@@ -178,9 +178,9 @@
                     </div>
                     </div>
                     <div class="row py-3 select-underline ">
-                    <div class="col-3 d-flex align-items-center justify-content-center"><p class="txt-gray-darker text-center">I interested</p> </div>
+                    <div class="col-3 txt-gray-darker ">I interested </div>
                     <div class="col-9 text-center">
-                      <select class="form-select " aria-label="Default select example">
+                      <select class="form-select main-color " aria-label="Default select example">
                         <option selected>Finacial Consultant</option>
                         <option value="1">Accounting services</option>
                         <option value="1">Tax services</option>
@@ -194,31 +194,31 @@
               <!----------------  Form section   -------------------->
               <form class="row g-3 my-3">
                 <div class="col-12">
-                  <label for="inputEmail4" class="form-label txt-gray-darker ">Your Name*</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Eg: Jhon Doe" required>
+                  <label for="inputEmail4" class="form-label main-color opacity-50  ">Your Name*</label>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Eg: Jhon Doe" pattern="^(\w\w+)\s(\w+)$" required>
                 </div>
                 <div class="col-6">
-                  <label for="inputemail" class="form-label txt-gray-darker ">Your Email*</label>
-                  <input type="email" class="form-control" id="inputemail" placeholder="name@company.com" required>
+                  <label for="inputemail" class="form-label main-color opacity-50  ">Your Email*</label>
+                  <input type="email" class="form-control" id="inputemail" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 </div>
                 <div class="col-6">
-                  <label for="inputtel" class="form-label txt-gray-darker ">Phone Number</label>
-                  <input type="tel" class="form-control" id="inputtel" placeholder="Full Number (incl.prefix)">
+                  <label for="inputtel" class="form-label main-color opacity-50  ">Phone Number</label>
+                  <input type="tel" class="form-control" id="inputtel" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"  placeholder="Full Number (incl.prefix)">
                 </div>
                 <div class="col-12">
-                  <label for="exampleFormControlTextarea1" class="form-label txt-gray-darker ">Message</label>
+                  <label for="exampleFormControlTextarea1" class="form-label main-color opacity-50  ">Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
+                    <label class="form-check-label txt-gray-darker " for="gridCheck" style="font-size: 0.8rem;">
                      I agree to recieve communications from FinLab
                     </label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="button" class="btn btn-success ">Send Message</button>
+                  <button type="submit" class="btn btn-success ">Send Message</button>
                 </div>
               </form>
                 </div> 
@@ -228,7 +228,7 @@
         <!-----------x-------- model talk to an expert  ----------x------------>
         
     <!----------------------- Left side offcanvas  ------------------------>
-      <div class="offcanvas offcanvas-start mt-5" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -237,37 +237,37 @@
           <div class="card" style="width: 20rem;">
             <img src="../../shared/images/offcanvas-image.jpg" class="card-img-top" alt="...">
             <div class="card-body my-3">
-              <p class="card-text">Our firm provides the expert support organisations need to thrive in a fast-changing world.</p>
+              <p class="card-text cmn-text">Our firm provides the expert support organisations need to thrive in a fast-changing world.</p>
             </div>
           </div>
           <div class="address my-3">
-            <h3 class="h5">Address: <span class="cmn-text">1270 Beverley Rd Brooklyn, New York 11226 United States</span> </h3>
-            <h3 class="h5">Phone: <span class=" cmn-text text-success">0712 610 33 181</span> </h3>
-            <h3 class="h5">Mail: <span class="cmn-text text-success">info@example.com</span> </h3>
+            <h3 class="  main-color opacity-75">Address: <span class="cmn-text " >1270 Beverley Rd Brooklyn, New York 11226 United States</span> </h3>
+            <h3 class=" main-color opacity-75">Phone: <span class=" cmn-text txt-green">0712 610 33 181</span> </h3>
+            <h3 class=" main-color opacity-75">Mail: <span class="cmn-text txt-green">info@example.com</span> </h3>
           </div>
-          <div class="form-offcanvas my-5">
-            <h3 class="h6">Request a callback</h3>
+          <form class="form-offcanvas my-5">
+            <h3 class="h6 main-color  opacity-50 ">Request a callback</h3>
             <div class="mb-3">
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+              <input type="text" class="form-control" id="formGroupExampleInput" pattern="^(\w\w+)\s(\w+)$" placeholder="Your Name*" required>
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+              <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Your Phone Number*" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}" required>
             </div>
             <div class="mb-3">
-              <input type="button" class="form-control btn btn-success" id="" value="Request a callback" >
+              <input type="submit" class="form-control btn btn-success" id="" value="Request a callback" >
             </div>
-        </div>
+          </form>
         </div>
       </div>
       <!------------------x--------- Left side Offcanvas  -----------x------------>
             <!------------------- offcanvas menu for smaller device ---------------->
 
-<div class="offcanvas offcanvas-end  mt-5 w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
     <h5 id="offcanvasRightLabel"></h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body container px-5  ">
+  <div class="offcanvas-body container  ">
 
     <!-------------------- accordian menu -------------------------------->
     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -281,8 +281,8 @@
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <ul class=" menu-drop ">
-              <li><a class="dropdown-item " href="#">Home 1 </a></li>
-              <li><a class="dropdown-item" href="#">Home 2</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold " href="#">Home 1 </a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Home 2</a></li>
           </div>
         </div>
       </div>
@@ -296,11 +296,11 @@
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <ul class=" menu-drop ">
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
-              <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
-              <li><a class="dropdown-item" href="#">Our History</a></li>
-              <li><a class="dropdown-item" href="#">Careers</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">About Us</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Our Leadership Team</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Why Choose Us</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Our History</a></li>
+              <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Careers</a></li>
         </ul>
           </div>
         </div>
@@ -314,16 +314,16 @@
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body"><ul class=" menu-drop ">
-            <li><a class="dropdown-item" href="#">Accounting 
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Accounting 
               services
             </a></li>
-            <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
-            <li><a class="dropdown-item" href="#">Capital Investments</a></li>
-            <li><a class="dropdown-item" href="#">Finance & Restructuring</a></li>
-            <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
-            <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
-            <li><a class="dropdown-item" href="#">Technical Advisory</a></li>
-            <li><a class="dropdown-item" href="#">All Services Page</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Audit & Tax Services</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Capital Investments</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Finance & Restructuring</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Financial Consultant</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Portfolio Management</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Technical Advisory</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">All Services Page</a></li>
       </ul></div>
         </div>
       </div>
@@ -337,9 +337,9 @@
         <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body"> 
             <ul class=" menu-drop ">
-            <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
-                  <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
-                  <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+            <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Cases Grid 1</a></li>
+                  <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Cases Grid 2</a></li>
+                  <li><a class="dropdown-item txt-gray-darker fs-6 fw-bold" href="#">Cases Grid 3</a></li>
       </ul>
     </div>
         </div>
@@ -347,16 +347,320 @@
     </div>
     <!-----------x--------- accordian menu ------------------x-------------->
 <!----------------------------- Other menu links  -------------------------->
-<a class="navbar-brand  row menu-btn nav-menu txt-gray-darker" href="#">Blog & Insights</a>
-<a class="navbar-brand   row menu-btn nav-menu txt-gray-darker" href="#">
+<a class="navbar-brand  row  nav-menu txt-gray-darker px-4  pt-2 border-top border-bottom" href="#">Blog & Insights</a>
+<a class="navbar-brand   row  nav-menu txt-gray-darker px-4 py-2 border-bottom" href="#">
   shop
 </a>
-<a class="navbar-brand  row menu-btn nav-menu txt-gray-darker"  href="#">Contact Us</a>
+<a class="navbar-brand  row  nav-menu txt-gray-darker px-4 border-bottom"  href="#">Contact Us</a>
   </div>
 </div>
 <!------------x------- offcanvas menu for smaller device -------x--------->
   <!------------x-------- Second navbar  -------------x---------->
    <!------------x---------- Header section ----------x------------>
+
+  <!--------------------- Body Section  ------------------------------->
+          
+  <main>
+    <!---------------------------- Hero section  -------------------------------->
+          <section class="hero py-5 ">
+            <!-- <div class=""> -->
+            <div class="container-md  ">
+            <div class="row  py-3">
+              <div class="col-12">
+                <p class="hero-question">Ready to Get started ?</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-xl-6 text-white  my-2 ">
+                <h1 class="display-5 fw-bold text-uppercase">have questions ? Contact us to learn more</h1>
+              </div>
+            </div>
+            <div class="row my-3 ">
+                <div class="card  col-md-6 col-12 address me-2 mt-3" style="width: 18em;">
+                  <div class="card-body text-white">
+                    <h5 class="card-title">Address</h5>
+                      <address>
+                        <h6 class="card-subtitle mb-2 mt-2 txt-gray fw-bold">541 Melville Ave,Palo Alto,</h6>
+                        <h6 class="card-subtitle mb-2 txt-gray fw-bold">CA 94301,</h6>
+                        <h6 class="card-subtitle mb-2 txt-gray fw-bold">United States</h6>
+                      </address>
+                    
+                  </div>
+                </div>
+                <div class="card col-md-6 col-12 address  mt-3" style="width: 18em;">
+                  <div class="card-body text-white">
+                    <h5 class="card-title ">Contact Info</h5>
+                    <h6 class="card-subtitle mb-2 mt-2 txt-gray fw-bold">Phone: +1.809.120.4590</h6>
+                    <h6 class="card-subtitle mb-2 txt-gray fw-bold">Email: info@example.com</h6>
+                    <h6 class="card-subtitle mb-2 txt-gray fw-bold">M – F: 6 am to 8 pm EST</h6>
+                  </div>
+                </div>
+              </div>
+                <button type="button" class="btn btn-success rounded-pill col-12 col-sm-6 col-lg-4 text-start fs-4 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right icon me-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg> Go to contact form</button>
+           
+            <!------------------- bottom card ------------------------------->
+        <div class="row  text-dark my-3">
+          <!-- card1 -->
+          <div class="card mb-3 col-xl-4 col-md-6 col-sm-12" style="max-width: 540px;">
+            <div class="row g-0  hero-card">
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="main-color">Explore Our Company</h5>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                 </svg>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="img/contact-card1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="card mb-3 col-xl-4 col-md-6 col-sm-12" style="max-width: 540px;">
+            <div class="row g-0 hero-card">
+              <div class="col-6 ">
+                <div class="card-body">
+                  <h5 class="main-color">Core value We Provide</h5>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-up-right " viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                 </svg>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="img/contact-card2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="card mb-3 col-xl-4 col-md-6 col-sm-12" style="max-width: 540px;">
+            <div class="row g-0 hero-card ">
+              <div class="col-6">
+                <div class="card-body">
+                 <h5 class="main-color">View Our Client Stories</h5>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                </svg>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="img/contact-card3.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-------------x------------ bottom cards ----------------x---------------->
+          </section>
+      <!----------------x-------------- hero section  -----------x------------------->
+                <!-------------------- contact us form section --------------------------->
+      <section class="container-md py-3">
+        <div class="row my-5">
+          <form class="row gx-3 col-12 col-lg-6 p-5 contact-form" id="form3" >
+              <div class="row select-underline ">
+                <div class="col-12 col-md-3 txt-gray-darker">I'm a/an</div>
+                <div class=" col-12 col-md-9">
+                  <select class="form-select main-color" aria-label="Default select example">
+                    <option selected>Freelancer /Owen Business</option>
+                    <option value="1">Other Options</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row select-underline my-5">
+                <div class="col-12 col-md-3 txt-gray-darker">I Want</div>
+                <div class="col-12 col-md-9 ">
+                  <select class="form-select main-color" aria-label="Default select example">
+                    <option selected>Call me to Discuss my Questions</option>
+                    <option value="1">Email me your digital prospectus</option>
+                    <option value="1">Mail me your full information pack</option>
+                  </select>
+                </div>
+                </div>
+                <div class="row  select-underline">
+                <div class="col-12 col-md-3 txt-gray-darker">I interested</div>
+                <div class=" col-12 col-md-9">
+                  <select class="form-select main-color" aria-label="Default select example">
+                    <option selected >Finacial Consultant</option>
+                    <option value="1">Accounting services</option>
+                    <option value="1">Tax services</option>
+                    <option value="1">Careers</option>
+                    <option value="1">Request Additional Information</option>
+                  </select>
+                </div>
+              </div>
+         <!--------x--------  Option Area  -----------x--------->
+          <!----------------  Form section   -------------------->
+            <div class="col-12 mt-2 py-3 form-items">
+              <label for="name3" class="form-label main-color opacity-50">Your Name*</label>
+              <input type="text" class="form-control" id="name3"  placeholder="Eg: Jhon Doe" pattern="^(\w\w+)\s(\w+)$" required>
+            </div>
+            <div class="col-12 col-sm-6 py-3 form-items ">
+              <label for="mail3" class="form-label main-color opacity-50">Your Email*</label>
+              <input type="email" class="form-control" id="email3" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <div class="col-12 col-sm-6 py-3 form-items">
+              <label for="number2" class="form-label main-color opacity-50">Phone Number</label>
+              <input type="tel" class="form-control" id="number2" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"  placeholder="Full Number (incl.prefix)">
+            </div>
+            <div class="col-12 py3 form-items">
+              <label for="message3" class="form-label main-color opacity-50">Message</label>
+              <textarea class="form-control" id="message3" rows="3" placeholder="Enter Message"></textarea>
+            </div>
+            <div class="col-12 py-3 form-items">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label txt-gray-darker " for="gridCheck" style="font-size: 0.8rem;">
+                 I agree to recieve communications from FinLab
+                </label>
+              </div>
+            </div>
+            <div class="col-12 py-3 form-items">
+              <button type="submit" class="btn btn-success w-100 " id="btn1">Send Message</button>
+            </div>
+          </form>
+            <!------------------x-------form  --------------------x----------------->
+          <!-- bg image : form section -->
+          <div class="col-6 bg-form d-none d-lg-block"></div>
+        </div>
+      </section>
+       <!------------x----------- contact us form section -------------x----------------->
+         <!------------------- briefing section ---------------------------------------->
+      <section class="container-md">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="col-lg-8 col-12 mx-lg-auto text-center display-5 fw-bold primary-color ">Why choose us to be your financial advisors?</h2>
+          </div>
+          <p class="col-12 text-center py-3 cmn-text fs-5">We help you to secure a stable and fulfilling financial future</p>
+        </div>
+        <!-- briefing section cards -->
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-6 border-end py-4">
+            <div class="card">
+              <div class="card-body text-center text-md-start">
+                <p class="brief-card-no">
+                  <span class="txt-gray fs-4">
+                    01.
+                  </span>
+                </p>
+                <h5 class="card-title h4 txt-green fw-bold">Experienced.</h5>
+                <p class="card-text py-2 cmn-text">At FinLab, Our team of advisers are experts in their field, experienced as proven by their qualifications and industry recognition.</p>
+                <img src="img/contact-briefing-icon1.png" alt="" width="80 rem" height="80 rem" class="mx-auto mx-md-0">
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-lg-4 col-md-6 border-end broder-md-end-0 py-4 ">
+            <div class="card">
+              <div class="card-body text-center text-md-start">
+                <p class="brief-card-no">
+                  <span class="txt-gray fs-4">
+                    02.
+                  </span>
+                </p>
+                <h5 class="card-title h4 txt-green fw-bold">Independent.</h5>
+                <p class="card-text py-2 cmn-text">We can recommend products from the whole market. You will therefore receive a financial plan and recommendations that are completely bespoke.</p>
+                <img src="img/coontact-briefing-icon2.png" alt="" width="80 rem" height="80 rem" class="mx-auto mx-md-0">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 text-center text-md-start py-4">
+            <div class="card">
+              <div class="card-body ">
+                <p class="brief-card-no ">
+                  <span class="txt-gray fs-4">
+                    03.
+                  </span>
+                </p>
+                <h5 class="card-title h4 txt-green fw-bold ">Support.</h5>
+                <p class="card-text py-2 cmn-text">At FinLab, We respond to all inquiries within 24 hours and are eager to address questions, provide financial advice, and more.</p>
+                <img src="img/contact-briefing-icon-3.png" alt="" width="80 rem" height="80 rem" class="mx-auto mx-md-0">
+              </div>
+            </div>
+          </div>
+        </div>
+       <!------x------- Briefing section ----------x---------------->
+       <div class="row my-3">
+        <div class="col-12 text-center cmn-text">
+          <p>Remember that our team is always just a phone call away. Toll Free: <span class="txt-green fw-bold"> 0712 610 33 181 </span></p>
+        </div>
+      </div>
+      </section>
+
+  </main>
+  <!-------------------------- Footer  ---------------------------------->
+  <footer>
+    <div class="container">
+      <!------------------ Footer head  -------------------->
+     <div class="row mt-5 flex-column align-items-center justify-content-center">
+       <div class="col-12 mt-5 pt-5">
+         <h2 class="col-lg-8 col-12 mx-lg-auto text-center display-5 fw-bold text-white">Your Future in Finance Starts Here</h2>
+       </div>
+       <p class=" col-lg-8 col-12 text-center py-3 fs-5 txt-white-trans fw-normal">Learn more about our commercial loan broker training program & join our family of over 700 successful entrepreneurs.</p>
+       <button type="button" class="btn btn-success col-8 col-md-4  py-2">Get My Free Proposal</button>
+       <p class="txt-white-trans text-center col-12 col-md-6 my-4">Or call us now at <span class="text-white"> 0712 610 33 181</span></p>
+     </div>
+     <!---------------x---------- Footer head  ------------x-------------------->
+       <!------------------------------------- Footer body --------------------------------- -->
+       <div class="row ">
+        <div class="col-12 col-lg-8">
+          <!-- footer lists -->
+          <div class="row flex-wrap ">
+            <ul class="list-group col-sm-3 col-6 mt-5 ">
+              <li class="list-group-item text-white" aria-current="true">Follow Us</li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Facebook</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Twitter</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Instagram</a></li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">linkedin</a> </li>
+            </ul>
+            <ul class="list-group col-sm-3 col-6 mt-5 ">
+              <li class="list-group-item text-white" aria-current="true">Company </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> About Us</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Our People</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Blog & Insights</a></li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Contact Us</a> </li>
+            </ul>
+            <ul class="list-group col-sm-3  col-6 mt-5 ">
+              <li class="list-group-item text-white" aria-current="true">Services</li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Accounting</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Financial</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Investments</a></li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Tax & Audit</a> </li>
+            </ul>
+            <ul class="list-group col-sm-3  col-6 mt-5 ">
+              <li class="list-group-item text-white" aria-current="true">Industries</li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Automotive</a>  </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Banking</a> </li>
+              <li class="list-group-item"><a href="" class="txt-white-trans"> Insurance</a></li>
+              <li class="list-group-item"><a href="" class="txt-white-trans">Healthcare</a> </li>
+            </ul>
+          </div>
+        </div>
+        <!-- second section - Footer body -->
+        <div class=" cl-12 col-lg-4 mt-5">
+          <div class="row">
+            <p class="col-12 txt-white-trans">By providing your e-mail address, you are consenting to receive press releases, presentations and other information concerning FinLab.</p>
+         
+          <form class="input-group mb-3 " action="#">
+            <input type="email" class="form-control footer-form" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Your email address" id="button-bottom" required>
+            <button class="btn " type="submit" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle text-white" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+            </svg></button>
+          </form>
+        </div>
+        </div>
+        <!-------x---- second section- footer body ------------>
+        <p class="col-12 txt-white-trans mt-5 " style="font-size: 0.8rem;">Address: 1270 Beverley Rd Brooklyn, New York 11226 United States.</p>
+        <p class="col-12 txt-white-trans pb-5 border-bottom border-light" style="font-size: 0.8rem;"> Phone: <span class="text-white">0712 610 33 181 </span>  | Mail: <span class="text-white"> info@example.com </span></p>
+        <!---------------------- Copy Right   --------------------->
+        <div class="col-12 py-5">
+          <p class="mx-auto txt-white-trans text-center" style="font-size: 0.8rem;">Copyleft © 2021 Develhope Fullstack Class2 Team6. Page built by <span class="text-white"> Bibin Nandikattu Jose</span></p>
+        </div>
+       </div>
+    </div>
+  </footer>
+    <!----------------x---------- Footer  -------------------x-------------->
         <!-- Bootstrap JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
