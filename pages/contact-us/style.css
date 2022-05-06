@@ -223,3 +223,9 @@ footer {
     background-color: transparent;
     border: none;
 }
+
+.footer-form:focus {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
