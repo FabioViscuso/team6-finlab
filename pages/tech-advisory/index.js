@@ -1,19 +1,12 @@
-/* Tech advisory form submit button */
-const techAdvFormBtn = document.getElementById("techAdvFormSubmit");
-/* Tech advisory form submit logic */
-techAdvFormBtn.addEventListener("click", (event) => {
-    event.preventDefault();
+const newsletterBtn = document.getElementById("newsletterSubmit");
 
-    const techAdvRequest = new ContactRequest(
-        document.getElementById("techAdvFormName").value,
-        document.getElementById("techAdvFormEmail").value,
-        document.getElementById("techAdvFormPhone").value,
-        document.getElementById("techAdvFormMessage").value,
-        document.getElementById("techAdvUserJob").value,
-        document.getElementById("techAdvUserNeededServ").value,
-        document.getElementById("techAdvUserContactMethod").value,
-        document.getElementById("techAdvFormAgreement").value
+newsletterBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const newsletterReq = new NewsletterRequest(
+        "",
+        undefined,
+        document.getElementById("newsletterApply").value
     );
-    console.log(techAdvRequest);
-    console.log(techAdvRequest.toJson());
+    console.log(newsletterReq);
+    console.log(newsletterReq.toJson());
 });

@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+.navbardark{
+    background-color:#023a51 !important
+}
+.prova{
+    border: 1px solid black;
+}
+
+.bianco{
+    border: 1px solid white;
+
+}
+body{
+    height:100vh;
+    width:100vw;
+}
+
+.hamburger{
+    width: max-content;
+}
+.f-bianco{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+
+.f-normal{
+    color: white;
+    font-family: 'Manrope';
+    font-size: 16px;
+
+}
+.font{
+    font-size: 60px;
+}
+
+.imm{
+    width: 294px;
+    height: 147px;
+    background-image: url(/pages/case-study-3/img/c4.jpg);
+    background-position: center ;
+    background-size: cover;
+}
+
+section{
+   background-image: url(/pages/case-study-3/img/sfondo.svg); 
+   background-position: center;
+   background-size: cover;
+}
+
+.txt-gray{
+    color: #5c667d;
+    font-size: 18px;
+}
+
+.green{
+    color: #2cbc63;
+}
+
+.blue{
+    background-color: #023A51;
+    opacity: 90%;
+}
+
+
+.card_dimension{
+    width: clamp(20%, 20vw,80%);
+}
+
+.bg-input{
+    background-color: transparent;
+}
+.borderInput{
+    border-bottom: 2px solid #2cbc63;
+}
+.buttonfooter{
+    background-color: transparent;
+}
+.bordertopfooter{
+    border-top: 1px solid gray;
+}
+
+.bg-img{
+    background-image: url(/shared/images/finlab-footer.png);
+}
+
+.blu{
+
+    background-color: #023A51;
+}
+
+
