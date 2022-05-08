@@ -434,8 +434,8 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Freelancer/Own Buisness</option>
-                    <option value="1">Other option</option>
+                    <option selected id="modalUserJob" value="freelancer">Freelancer/Own Buisness</option>
+                    <option value="other">Other option</option>
                   </select>
                 </div>
                 <div class="col-4 my-2">I Want</div>
@@ -444,9 +444,9 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Call me to discuss our questions</option>
-                    <option value="2">Email me for digital prospectus</option>
-                    <option value="3">
+                    <option selected id="modalUserContactMethod" value="call">Call me to discuss our questions</option>
+                    <option value="mail-prospectus">Email me for digital prospectus</option>
+                    <option value="mail-fullpack">
                       Mail me your full information pack
                     </option>
                   </select>
@@ -457,23 +457,23 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Financial Consultant</option>
-                    <option value="2">Accounting Services</option>
-                    <option value="3">Tax Services</option>
-                    <option value="4">Careers</option>
-                    <option value="5">Request Additional Informations</option>
+                    <option selected id="modalUserNeededServ" value="financial-consultant">Financial Consultant</option>
+                    <option value="accounting">Accounting Services</option>
+                    <option value="tax-sevices">Tax Services</option>
+                    <option value="careers">Careers</option>
+                    <option value="additional-info">Request Additional Informations</option>
                   </select>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="exampleInputNameModal" class="form-label">
+                <label for="modalFormName" class="form-label">
                   Your name *
                 </label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputNameModal"
+                  id="modalFormName"
                   aria-describedby="nameHelp"
                   pattern="^(\w\w+)\s(\w+)$" 
                   placeholder="Your name"
@@ -482,13 +482,13 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="exampleInputEmailModal" class="form-label">
+                  <label for="modalFormEmail" class="form-label">
                     Your email *
                   </label>
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmailModal"
+                    id="modalFormEmail"
                     placeholder="Your email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     aria-label="Your email"
@@ -496,13 +496,13 @@
                   />
                 </div>
                 <div class="col">
-                  <label for="exampleInputNumberModal" class="form-label">
+                  <label for="modalFormPhone" class="form-label">
                     Your phone number
                   </label>
                   <input
                     type="text"
                     class="form-control"
-                    id="exampleInputNumberModal"
+                    id="modalFormPhone"
                     placeholder="Your phone number"
                     pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                     aria-label="Your Phone number" 
@@ -510,12 +510,12 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextareaModal" class="form-label">
+                <label for="modalFormMessage" class="form-label">
                   Message
                 </label>
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextareaModal"
+                  id="modalFormMessage"
                   rows="3"
                   placeholder="Enter a message..."
                 ></textarea>
@@ -524,14 +524,14 @@
                 <input
                   type="checkbox"
                   class="form-check-input"
-                  id="exampleCheckModal"
+                  id="modalFormCommunicationsAgreement"
                   required
                 />
                 <label class="form-check-label" for="exampleCheckModal">
                   I agree to receive communications from FinLab.
                 </label>
               </div>
-              <button type="submit" class="btn btn-squared-green txt-white">
+              <button type="submit" id="modalFormSubmit" class="btn btn-squared-green txt-white">
                 Send Message
               </button>
             </form>
@@ -585,7 +585,7 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputName"
+              id="offcanvasName"
               aria-describedby="nameHelp"
               pattern="^(\w\w+)\s(\w+)$" 
               placeholder="Your Name *"
@@ -597,14 +597,14 @@
               type="tel"
               class="form-control"
               placeholder="Phone Number *"
-              id="exampleInputNumber" 
+              id="offcanvasPhone" 
               name="phone" 
               pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
               required
             />
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-squared-green txt-white" type="submit">
+            <button class="btn btn-squared-green txt-white" id="offcanvasFormSubmit" type="submit">
               Request a Callback
             </button>
           </div>
@@ -1580,6 +1580,7 @@
                           class="form-control txt-white bg-dark border-0 border-bottom rounded-0"
                           placeholder="Your email address"
                           aria-label=""
+                          id="newsletterApply"
                           aria-describedby="button-addon2"
                           required
                       />
@@ -1587,7 +1588,7 @@
                           class="btn border-bottom rounded-0"
                           title="submit"
                           type="submit"
-                          id="button-addon2"
+                          id="newsletterSubmit"
                       >
                           <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -1641,6 +1642,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Local JS -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="/shared/js/sharedForms.js"></script>
   </body>
 </html>
