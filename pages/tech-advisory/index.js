@@ -4,7 +4,8 @@ const techAdvFormBtn = document.getElementById("techAdvFormSubmit");
 techAdvFormBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const modalRequest = new ContactRequest(
+    /* Populating the form */
+    const techAdvForm = new ContactRequest(
         document.getElementById("techAdvFormName").value,
         document.getElementById("techAdvFormPhone").value,
         document.getElementById("techAdvFormEmail").value,
@@ -12,8 +13,13 @@ techAdvFormBtn.addEventListener("click", (event) => {
         document.getElementById("techAdvUserJob").value,
         document.getElementById("techAdvUserNeededServ").value,
         document.getElementById("techAdvUserContactMethod").value,
-        document.getElementById("techAdvFormAgreement").value
+        document.getElementById("techAdvFormAgreement").checked
     );
-    console.log(modalRequest);
-    console.log(modalRequest.toJson());
+
+    /* Logging */
+    console.table(techAdvForm);
+    console.log(techAdvForm.toJson());
+
+    /* Sending form to server */
+    techAdvForm.sendToServer();
 });
