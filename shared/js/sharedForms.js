@@ -19,6 +19,21 @@ class ContactRequest {
         this.contactMethod = contactMethod;
         this.agreement = agreement;
     }
+
+    sendToServer() {
+        fetch("http://127.0.0.1:5000/data", {
+            method: "post",
+            body: JSON.stringify(this),
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+        })
+            .then((response) => response.text())
+            .then((data) => console.log(data))
+            .catch((e) => console.log(e));
+    }
+
     toJson() {
         return JSON.stringify(this);
     }
@@ -46,12 +61,18 @@ const offcanvBtn = document.getElementById("offcanvasFormSubmit");
 offcanvBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
+    /* Populating the form */
     const newCallbackRequest = new CallbackRequest(
         document.getElementById("offcanvasName").value,
         document.getElementById("offcanvasPhone").value
     );
-    console.log(newCallbackRequest);
+
+    /* Logging */
+    console.table(newCallbackRequest);
     console.log(newCallbackRequest.toJson());
+
+    /* Sending to server */
+    newCallbackRequest.sendToServer();
 });
 
 /* Modal form submit button */
@@ -60,6 +81,7 @@ const modalBtn = document.getElementById("modalFormSubmit");
 modalBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
+    /* Populating the form */
     const modalRequest = new ContactRequest(
         document.getElementById("modalFormName").value,
         document.getElementById("modalFormPhone").value,
@@ -68,10 +90,15 @@ modalBtn.addEventListener("click", (event) => {
         document.getElementById("modalUserJob").value,
         document.getElementById("modalUserNeededServ").value,
         document.getElementById("modalUserContactMethod").value,
-        document.getElementById("modalFormCommunicationsAgreement").value
+        document.getElementById("modalFormCommunicationsAgreement").checked
     );
-    console.log(modalRequest);
+
+    /* Logging */
+    console.table(modalRequest);
     console.log(modalRequest.toJson());
+
+    /* Sending to server */
+    modalRequest.sendToServer();
 });
 
 /* Newsletter form submit button */
@@ -79,11 +106,18 @@ const newsletterBtn = document.getElementById("newsletterSubmit");
 /* Newsletter form submit logic */
 newsletterBtn.addEventListener("click", (event) => {
     event.preventDefault();
+
+    /* Populating the form */
     const newsletterReq = new NewsletterRequest(
         "",
         undefined,
         document.getElementById("newsletterApply").value
     );
-    console.log(newsletterReq);
+
+    /* Logging */
+    console.table(newsletterReq);
     console.log(newsletterReq.toJson());
+
+    /* Sending to server */
+    newsletterReq.sendToServer();
 });
