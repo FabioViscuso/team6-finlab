@@ -1,8 +1,13 @@
-function deleteDataFromServer() {
+function deleteDataFromServer(keyValue) {
     fetch("http://127.0.0.1:5000/data", {
         method: "delete",
+        body: JSON.stringify({ key: keyValue }),
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
     })
-        .then((response) => response.text())
+        .then((response) => response.json())
         .then((data) => console.log(data))
         .catch((e) => console.log(e));
 }
