@@ -460,66 +460,66 @@
                 <!-------------------- contact us form section --------------------------->
       <section class="container-md py-3">
         <div class="row my-5">
-          <form class="row gx-3 col-12 col-lg-6 p-5 contact-form" id="form3" >
+          <form class="row gx-3 col-12 col-lg-6 p-5 contact-form" id="contactUsForm" >
               <div class="row select-underline ">
                 <div class="col-12 col-md-3 txt-gray-darker">I'm a/an</div>
                 <div class=" col-12 col-md-9">
-                  <select class="form-select main-color" aria-label="Default select example">
-                    <option selected>Freelancer /Owen Business</option>
-                    <option value="1">Other Options</option>
+                  <select class="form-select main-color" aria-label="Default select example" id="contactUsUserJob">
+                    <option value="Freelancer">Freelancer /Owen Business</option>
+                    <option value="other">Other Options</option>
                   </select>
                 </div>
               </div>
               <div class="row select-underline my-5">
                 <div class="col-12 col-md-3 txt-gray-darker">I Want</div>
                 <div class="col-12 col-md-9 ">
-                  <select class="form-select main-color" aria-label="Default select example">
-                    <option selected>Call me to Discuss my Questions</option>
-                    <option value="1">Email me your digital prospectus</option>
-                    <option value="1">Mail me your full information pack</option>
+                  <select class="form-select main-color" aria-label="Default select example" id="contactUsUserContactMethod">
+                    <option value="call">Call me to Discuss my Questions</option>
+                    <option value="Email digital prospectus">Email me your digital prospectus</option>
+                    <option value="Mail information pack">Mail me your full information pack</option>
                   </select>
                 </div>
                 </div>
                 <div class="row  select-underline">
                 <div class="col-12 col-md-3 txt-gray-darker">I interested</div>
                 <div class=" col-12 col-md-9">
-                  <select class="form-select main-color" aria-label="Default select example">
-                    <option selected >Finacial Consultant</option>
-                    <option value="1">Accounting services</option>
-                    <option value="1">Tax services</option>
-                    <option value="1">Careers</option>
-                    <option value="1">Request Additional Information</option>
+                  <select class="form-select main-color" aria-label="Default select example" id="contactUsUserNeededServ" >
+                    <option value="Finacial Consultant" >Finacial Consultant</option>
+                    <option value="Accounting services">Accounting services</option>
+                    <option value="Tax services">Tax services</option>
+                    <option value="Careers">Careers</option>
+                    <option value=" Additional Information">Request Additional Information</option>
                   </select>
                 </div>
               </div>
          <!--------x--------  Option Area  -----------x--------->
           <!----------------  Form section   -------------------->
             <div class="col-12 mt-2 py-3 form-items">
-              <label for="name3" class="form-label main-color opacity-50">Your Name*</label>
-              <input type="text" class="form-control" id="name3"  placeholder="Eg: Jhon Doe" pattern="^(\w\w+)\s(\w+)$" required>
+              <label for="contactUsFormName" class="form-label main-color opacity-50">Your Name*</label>
+              <input type="text" class="form-control" id="contactUsFormName"  placeholder="Eg: Jhon Doe" pattern="^(\w\w+)\s(\w+)$" required>
             </div>
             <div class="col-12 col-sm-6 py-3 form-items ">
-              <label for="mail3" class="form-label main-color opacity-50">Your Email*</label>
-              <input type="email" class="form-control" id="email3" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+              <label for="contactUsFormEmail" class="form-label main-color opacity-50">Your Email*</label>
+              <input type="email" class="form-control" id="contactUsFormEmail" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             </div>
             <div class="col-12 col-sm-6 py-3 form-items">
-              <label for="number2" class="form-label main-color opacity-50">Phone Number</label>
-              <input type="tel" class="form-control" id="number2" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"  placeholder="Full Number (incl.prefix)">
+              <label for="contactUsFormPhone" class="form-label main-color opacity-50">Phone Number</label>
+              <input type="tel" class="form-control" id="contactUsFormPhone" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"  placeholder="Full Number (incl.prefix)">
             </div>
             <div class="col-12 py3 form-items">
-              <label for="message3" class="form-label main-color opacity-50">Message</label>
-              <textarea class="form-control" id="message3" rows="3" placeholder="Enter Message"></textarea>
+              <label for="contactUsFormMessage" class="form-label main-color opacity-50">Message</label>
+              <textarea class="form-control" id="contactUsFormMessage" rows="3" placeholder="Enter Message"></textarea>
             </div>
             <div class="col-12 py-3 form-items">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="some">
-                <label class="form-check-label txt-gray-darker " for="some" style="font-size: 0.8rem;">
+                <input class="form-check-input" type="checkbox" id="contactUsFormAgreement">
+                <label class="form-check-label txt-gray-darker " for="contactUsFormAgreement" style="font-size: 0.8rem;">
                  I agree to recieve communications from FinLab
                 </label>
               </div>
             </div>
             <div class="col-12 py-3 form-items">
-              <button type="submit" class="btn btn-success w-100 " id="btn1">Send Message</button>
+              <button type="submit" class="btn btn-success w-100 " id="contactUsFormSubmit">Send Message</button>
             </div>
           </form>
             <!------------------x-------form  --------------------x----------------->
@@ -669,8 +669,7 @@
             crossorigin="anonymous"
         ></script>
         <!-- Local JS -->
-          <!-- Local JS -->
-          <script src="../../shared/js/sharedForms.js"></script>
+        <script src="../../shared/js/sharedForms.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
