@@ -17,6 +17,13 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
         />
+        <!-- Manrope font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700&display=swap"
+            rel="stylesheet"
+        />
         <!-- Common CSS -->
         <link rel="stylesheet" href="../../shared/css/design.css" />
         <!-- Local CSS -->
@@ -46,7 +53,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="homeDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -54,10 +61,10 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="homeDropdown"
                             >
                                 <li>
-                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#">
                                         Homepage 1
                                     </a>
                                 </li>
@@ -76,7 +83,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="whoweareDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -84,7 +91,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="whoweareDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -109,7 +116,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="whatwedoDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -117,7 +124,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="whatwedoDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -142,7 +149,7 @@
                             <button
                                 class="btn-topbar dropdown-toggle"
                                 type="button"
-                                id="dropdownMenuButton1"
+                                id="casestudiesDropdown"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
@@ -150,7 +157,7 @@
                             </button>
                             <ul
                                 class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton1"
+                                aria-labelledby="casestudiesDropdown"
                             >
                                 <li>
                                     <a class="dropdown-item" href="#">Action</a>
@@ -273,12 +280,13 @@
         <div class="modal fade" tabindex="-1" id="talkexpert">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form class="container p-4">
+                    <form action="#" id="modalForm" class="container p-4">
                         <div
                             class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
                         >
                             <div class="txt-blue">I'm a/an</div>
                             <select
+                                id="modalUserJob"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -293,6 +301,7 @@
                         >
                             <span class="txt-blue">I want</span>
                             <select
+                                id="modalUserContactMethod"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -312,6 +321,7 @@
                         >
                             <span class="txt-blue">I interested</span>
                             <select
+                                id="modalUserNeededServ"
                                 class="form-select border-0 w-75"
                                 aria-label="Default select example"
                             >
@@ -332,7 +342,7 @@
                         </div>
                         <div class="mb-3 mt-5">
                             <label
-                                for="name"
+                                for="modalFormName"
                                 class="form-label txt-blue txt-weight-600"
                             >
                                 Your Name *
@@ -340,16 +350,17 @@
                             <input
                                 type="text"
                                 class="form-control"
-                                id="name"
-                                aria-describedby="emailHelp"
+                                id="modalFormName"
+                                aria-describedby="modal 1 form name"
                                 placeholder="Eg: John Doe"
+                                pattern="^(\w\w+)\s(\w+)$"
                                 required
                             />
                         </div>
                         <div class="row">
                             <div class="mb-3 col-12 col-lg-6">
                                 <label
-                                    for="email"
+                                    for="modalFormEmail"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Your Email *
@@ -357,14 +368,15 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="email"
+                                    id="modalFormEmail"
                                     placeholder="name@company.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     required
                                 />
                             </div>
                             <div class="mb-3 col-12 col-lg-6">
                                 <label
-                                    for="phone"
+                                    for="modalFormPhone"
                                     class="form-label txt-blue txt-weight-600"
                                 >
                                     Phone Number
@@ -372,22 +384,47 @@
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="phone"
+                                    id="modalFormPhone"
                                     placeholder="Full Number (incl. prefix)"
+                                    pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                                 />
                             </div>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label
+                                for="modalFormMessage"
+                                class="form-label txt-blue txt-weight-600"
+                            >
+                                Message
+                            </label>
+                            <textarea
+                                type="text"
+                                class="form-control"
+                                id="modalFormMessage"
+                                placeholder="Enter Message"
+                                cols="30"
+                                rows="4"
+                            ></textarea>
                         </div>
                         <div class="mb-3 form-check">
                             <input
                                 type="checkbox"
                                 class="form-check-input"
-                                id="exampleCheck1"
+                                id="modalFormCommunicationsAgreement"
+                                required
                             />
-                            <label class="form-check-label" for="exampleCheck1">
+                            <label
+                                class="form-check-label"
+                                for="modalFormCommunicationsAgreement"
+                            >
                                 I agree to receive communications from FinLab.
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-squared-green">
+                        <button
+                            id="modalFormSubmit"
+                            type="submit"
+                            class="btn btn-squared-green"
+                        >
                             <span class="txt-white txt-weight-600 px-4">
                                 Send Message
                             </span>
@@ -443,7 +480,7 @@
                         info@example.com
                     </span>
                 </p>
-                <form class="mt-5">
+                <form action="#" id="offcanvForm" class="mt-5">
                     <p class="txt-gray txt-weight-600 pb-1">
                         Request a Callback
                     </p>
@@ -452,9 +489,10 @@
                         <input
                             type="text"
                             class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
+                            id="offcanvasName"
+                            aria-describedby="form name"
                             placeholder="Name *"
+                            pattern="^(\w\w+)\s(\w+)$"
                             required
                         />
                     </div>
@@ -464,10 +502,12 @@
                             class="form-control"
                             id="offcanvasPhone"
                             placeholder="Phone number *"
+                            pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
                             required
                         />
                     </div>
                     <button
+                        id="offcanvasFormSubmit"
                         type="submit"
                         class="btn btn-squared-green txt-white w-100"
                     >
@@ -748,30 +788,1079 @@
         </div>
         <!-- End of mobile offcanvas -->
 
-        <!--         <div class="container-fluid bg-dark pt-5">
-                    <div class="container">
-                        <div class="row d-flex">
-                            <div class="d-flex flex-column col-lg-6">
-                                <span class="txt-green txt-weight-600"
-                                    >Technology Advisory</span
-                                >
-                                <h1 class="txt-white txt-weight-700">
-                                    Technology Advisory Services
-                                </h1>
+        <!-- Intro section -->
+        <section class="bg-dark pt-5">
+            <div class="container pt-5">
+                <div class="row d-flex align-items-center">
+                    <div class="d-flex flex-column col-12 col-xl-6">
+                        <span class="txt-green txt-weight-600 mb-3">
+                            <div class="green-dot"></div>
+                            Technology Advisory
+                        </span>
+                        <h1 class="txt-white txt-weight-700">
+                            Technology Advisory Services
+                        </h1>
+                    </div>
+                    <div
+                        class="d-flex flex-column col-12 col-xl-6 border-top pt-5 mt-5 mt-xl-0"
+                    >
+                        <span class="txt-white-trans">
+                            Technology Advisory is a client-driven approach with
+                            a suite of IT support services, including
+                            professional advice backed by world-class expertise
+                            and in line with the changing technology trends. Our
+                            Advisers are available to help you make strategic
+                            decisions whenever you come to a crossroads.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero card -->
+            <div class="container-fluid hero-card-bg mt-5">
+                <div class="card hero-card border-0 bg-dark text-white">
+                    <img
+                        src="images/tech-adv-card-bg.jpg"
+                        class="card-img"
+                        alt="..."
+                    />
+                    <div
+                        class="card-img-overlay d-flex justify-content-end align-items-center d-none d-md-flex"
+                    >
+                        <div class="card py-2 px-3 hero-card__infocard">
+                            <h6
+                                class="card-title txt-blue txt-weight-600 text-center"
+                            >
+                                Quicklink For More Information
+                            </h6>
+                            <div class="border-top d-flex">
+                                <ul class="list-group">
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Accounting
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Investments
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Consultant
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-green txt-weight-600"
+                                    >
+                                        Technology
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Tax & Audit
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Finance
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        Management
+                                    </li>
+                                    <li
+                                        class="list-group-item border-0 txt-gray-darker txt-weight-600"
+                                    >
+                                        All Services
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="d-flex flex-column col-lg-6">
-                                <span class="txt-white-trans"
-                                    >Technology Advisory is a client-driven approach
-                                    with a suite of IT support services, including
-                                    professional advice backed by world-class expertise
-                                    and in line with the changing technology trends. Our
-                                    Advisers are available to help you make strategic
-                                    decisions whenever you come to a crossroads.</span
-                                >
+                            <button
+                                class="btn txt-white btn-squared-green w-100"
+                            >
+                                How Can We Help?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of hero card -->
+        </section>
+        <!-- Services list section -->
+        <section class="text-center pt-5">
+            <h2 class="txt-blue txt-weight-700">
+                A Full List of Services we Include are Below:
+            </h2>
+            <p class="txt-blue">
+                We Know The Importance Of Delivering The Best Customer
+                Experience.
+            </p>
+            <!-- Cards grid -->
+            <div
+                class="row container mx-auto row-cols-1 row-cols-md-2 px-5 g-4 mt-5"
+            >
+                <!-- card1 -->
+                <div class="col">
+                    <div class="card border-0">
+                        <div
+                            class="card-body d-flex align-items-start flex-column flex-md-row"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#2CBC63"
+                                class="bi bi-globe mx-auto services-logo"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                                />
+                            </svg>
+                            <div class="ps-3">
+                                <h5 class="card-title txt-blue txt-weight-600">
+                                    IT sourcing and procurement
+                                </h5>
+                                <p class="card-text">
+                                    Our tax experts can help you to develop a
+                                    thorough and up-to-date tax plan that
+                                    protects your cash flow and optimises your
+                                    position for the future.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <!-- card2 -->
+                <div class="col">
+                    <div class="card border-0">
+                        <div
+                            class="card-body d-flex flex-column flex-md-row align-items-start"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#2CBC63"
+                                class="bi bi-mic-fill mx-auto services-logo"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"
+                                />
+                                <path
+                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"
+                                />
+                            </svg>
+                            <div class="ps-3">
+                                <h5 class="card-title txt-blue txt-weight-600">
+                                    Cloud Computing
+                                </h5>
+                                <p class="card-text">
+                                    Our advisers can help you to land on the
+                                    best possible structure for your business,
+                                    protect wealth, reduce risk with full
+                                    compliance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <div
+                            class="card-body d-flex flex-column flex-md-row align-items-start"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#2CBC63"
+                                class="bi bi-kanban mx-auto services-logo"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h11zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z"
+                                />
+                                <path
+                                    d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3z"
+                                />
+                            </svg>
+                            <div class="ps-3">
+                                <h5 class="card-title txt-blue txt-weight-600">
+                                    IT operating model design
+                                </h5>
+                                <p class="card-text">
+                                    You have enough to worry about without the
+                                    administrative burden caused by indirect
+                                    taxes like GST, stamp duty, land tax and
+                                    payroll tax.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0">
+                        <div
+                            class="card-body d-flex flex-column flex-md-row align-items-start"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="#2CBC63"
+                                class="bi bi-boxes mx-auto services-logo"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+                                />
+                            </svg>
+                            <div class="ps-3">
+                                <h5 class="card-title txt-blue txt-weight-600">
+                                    IT programme delivery
+                                </h5>
+                                <p class="card-text">
+                                    If your company qualifies as an Early Stage
+                                    Innovation Company (ESIC) according to ATO
+                                    guidelines, your investors may be entitled
+                                    to tax incentives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials section -->
+        <section
+            class="container-fluid text-center mt-5 py-5 border-bottom bg-towhite-btm"
+        >
+            <div class="container">
+                <!-- chat icon -->
+                <div class="my-5">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="#2CBC63"
+                        class="bi bi-chat-left-fill testimonials-icon"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                        />
+                    </svg>
+                </div>
+                <h3 class="txt-blue txt-weight-600">
+                    "Your company has provided consistent, high quality,
+                    accounting support during the exponential growth we have
+                    experienced over the past two years"
+                </h3>
+                <div class="mt-4">
+                    <span class="rounded-pill txt-blue bg-white py-2 px-5">
+                        JOHN DOE, GROUP HEAD OF DIGITAL COMMUNICATIONS
+                    </span>
+                </div>
+
+                <div
+                    class="container my-5 d-flex flex-wrap gap-3 justify-content-center align-items-center"
+                >
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                    <div class="testimonial mx-3"></div>
+                </div>
+            </div>
+        </section>
+        <!-- served industries -->
+        <section class="container-fluid mt-5 py-5 bg-towhite-top">
+            <div class="container">
+                <div class="txt-green txt-weight-700 mb-3">
+                    <div class="green-dot"></div>
+                    INDUSTRIES WE SERVE
+                </div>
+                <h2 class="txt-blue txt-weight-700">
+                    Broad Knowledge Base. Deep Insights.
+                </h2>
+                <!-- lists -->
+                <div class="row mt-4">
+                    <!-- left list -->
+                    <div class="col-md-6">
+                        <ul class="list-group text-start">
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Automotive / Aviation
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Manufacturing & Industrial
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Real Estate
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Media & Entertainment
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Social & Public Sector
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Right list -->
+                    <div class="col-md-6">
+                        <ul class="list-group text-start">
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Retail & Ecommerce
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Human Resources
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Medical & Healthcare
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Banking / Finance
+                            </li>
+                            <li
+                                class="list-group-item txt-gray-darker txt-weight-600 border-0 bg-transparent"
+                            >
+                                <span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="#2CBC63"
+                                        class="bi bi-check-circle mb-1 me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                        />
+                                        <path
+                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                                        />
+                                    </svg>
+                                </span>
+                                Machinery & Equipment
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- experts -->
+                <h5 class="txt-blue txt-weight-600 my-5">
+                    Here Are Industry Experts Who Can Help You
+                </h5>
+                <div
+                    class="row d-flex justify-content-center flex-wrap flex-column flex-md-row"
+                >
+                    <!-- expert 1 -->
+                    <div
+                        class="card shadow mb-3 mx-auto border-0 rounded-0 px-0 col-6"
+                        style="max-width: 400px; height: fit-content"
+                    >
+                        <div class="row g-0">
+                            <div class="col-12 col-md-6">
+                                <div class="card-body">
+                                    <h5
+                                        class="card-title txt-blue txt-weight-600"
+                                    >
+                                        Larry Swank
+                                    </h5>
+                                    <p class="card-text">
+                                        Chief Executive Officer
+                                    </p>
+                                    <div class="card-text">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="#023A51"
+                                            class="bi bi-arrow-up-right"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img
+                                    src="images/photo-larry.jpg"
+                                    class="img-fluid rounded-0"
+                                    alt="expert larry"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- expert 2 -->
+                    <div
+                        class="card shadow mb-3 mx-auto border-0 rounded-0 px-0 col-6"
+                        style="max-width: 400px; height: fit-content"
+                    >
+                        <div class="row g-0">
+                            <div class="col-12 col-md-6">
+                                <div class="card-body">
+                                    <h5
+                                        class="card-title txt-blue txt-weight-600"
+                                    >
+                                        Maria MS
+                                    </h5>
+                                    <p class="card-text">
+                                        Chief Financial Officer
+                                    </p>
+                                    <div class="card-text">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="#023A51"
+                                            class="bi bi-arrow-up-right"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img
+                                    src="images/photo-maria.jpg"
+                                    class="img-fluid rounded-0"
+                                    alt="expert maria"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- expert 3 -->
+                    <div
+                        class="card shadow mb-3 mx-auto border-0 rounded-0 px-0 col-6"
+                        style="max-width: 400px; height: fit-content"
+                    >
+                        <div class="row g-0">
+                            <div class="col-12 col-md-6">
+                                <div class="card-body">
+                                    <h5
+                                        class="card-title txt-blue txt-weight-600"
+                                    >
+                                        Matt Millen
+                                    </h5>
+                                    <p class="card-text">
+                                        Chief Strategy Officer
+                                    </p>
+                                    <div class="card-text">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="#023A51"
+                                            class="bi bi-arrow-up-right"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img
+                                    src="images/photo-matt.jpg"
+                                    class="img-fluid rounded-0"
+                                    alt="expert matt"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact form -->
+        <section class="py-5">
+            <div class="text-center mt-5">
+                <h2 class="txt-blue txt-weight-700">
+                    Need a personalized solution?
+                </h2>
+                <p class="txt-blue my-4">
+                    We Know The Importance Of Delivering The Best Customer
+                    Experience.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <form
+                            action="#"
+                            id="techAdvForm"
+                            class="p-5 bg-azure col-12 col-lg-6"
+                        >
+                            <div
+                                class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
+                            >
+                                <div class="txt-blue">I'm a/an</div>
+                                <select
+                                    id="techAdvUserJob"
+                                    class="form-select border-0 w-75 bg-azure"
+                                    aria-label="Default select example"
+                                >
+                                    <option value="freelancer" selected>
+                                        Freelancer/Own Business
+                                    </option>
+                                    <option value="other">Other Options</option>
+                                </select>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-baseline border-bottom mb-4"
+                            >
+                                <span class="txt-blue">I want</span>
+                                <select
+                                    id="techAdvUserContactMethod"
+                                    class="form-select border-0 w-75 bg-azure"
+                                    aria-label="Default select example"
+                                >
+                                    <option value="call" selected>
+                                        Call me to Discuss my Questions
+                                    </option>
+                                    <option value="mail-prospectus">
+                                        Email me your digital prospectus
+                                    </option>
+                                    <option value="mail-fullpack">
+                                        Mail me your full information pack
+                                    </option>
+                                </select>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-baseline border-bottom"
+                            >
+                                <span class="txt-blue">I interested</span>
+                                <select
+                                    id="techAdvUserNeededServ"
+                                    class="form-select border-0 w-75 bg-azure"
+                                    aria-label="Default select example"
+                                >
+                                    <option value="financial-consultant">
+                                        Financial Consultant
+                                    </option>
+                                    <option value="accounting" selected>
+                                        Accounting Services
+                                    </option>
+                                    <option value="tax-services">
+                                        Tax Services
+                                    </option>
+                                    <option value="careers">Careers</option>
+                                    <option value="additional-info">
+                                        Request additional information
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-3 mt-5 text-start">
+                                <label
+                                    for="techAdvFormName"
+                                    class="form-label txt-blue txt-weight-600"
+                                >
+                                    Your Name *
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="techAdvFormName"
+                                    aria-describedby="form name field"
+                                    placeholder="Eg: John Doe"
+                                    pattern="^(\w\w+)\s(\w+)$"
+                                    required
+                                />
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 col-12 col-lg-6 text-start">
+                                    <label
+                                        for="techAdvFormEmail"
+                                        class="form-label txt-blue txt-weight-600"
+                                    >
+                                        Your Email *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="techAdvFormEmail"
+                                        placeholder="name@company.com"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3 col-12 col-lg-6 text-start">
+                                    <label
+                                        for="techAdvFormPhone"
+                                        class="form-label txt-blue txt-weight-600"
+                                    >
+                                        Phone Number
+                                    </label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="techAdvFormPhone"
+                                        placeholder="Full Number (incl. prefix)"
+                                        pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 text-start">
+                                <label
+                                    for="techAdvFormMessage"
+                                    class="form-label txt-blue txt-weight-600"
+                                >
+                                    Message
+                                </label>
+                                <textarea
+                                    type="text"
+                                    class="form-control"
+                                    id="techAdvFormMessage"
+                                    placeholder="Enter Message"
+                                    cols="30"
+                                    rows="4"
+                                ></textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="techAdvFormAgreement"
+                                    required
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="techAdvFormAgreement"
+                                >
+                                    I agree to receive communications from
+                                    FinLab.
+                                </label>
+                            </div>
+                            <button
+                                id="techAdvFormSubmit"
+                                type="submit"
+                                class="btn btn-squared-green w-100"
+                            >
+                                <span class="txt-white txt-weight-600 px-4">
+                                    Send Message
+                                </span>
+                            </button>
+                        </form>
+                        <div class="d-none d-lg-block col-lg-6 p-0">
+                            <img
+                                src="images/form-img.jpg"
+                                class="w-100 p-0 h-100"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-dark">
+            <div class="container text-center">
+                <div class="row d-flex pt-5 justify-content-center">
+                    <div class="bg-dark text-white col-12 col-md-8">
+                        <div class="container footer-cta py-5">
+                            <h2 class="card-title mb-4 fs-1 txt-weight-700">
+                                Your Future in Finance Starts Here
+                            </h2>
+                            <p class="card-text txt-white-trans mb-4">
+                                Learn more about our commercial loan broker
+                                training program & join our family of over 700
+                                successful entrepreneurs.
+                            </p>
+                            <button
+                                class="btn btn-squared-green txt-white txt-weight-600 mb-5 py-3 px-5"
+                            >
+                                Get My Free Proposal
+                            </button>
+                            <p class="card-text txt-white-trans">
+                                Or call us now at
+                                <span class="txt-white txt-weight-600">
+                                    0712 610 33 181
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row d-flex justify-content-between align-items-center mt-5 pb-4 gx-4"
+                >
+                    <ul
+                        class="list-group border-0 text-start w-auto col-6 col-md-2"
+                    >
+                        <li
+                            class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                        >
+                            Follow Us
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Facebook
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Twitter
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Instagram
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Linkedin
+                        </li>
+                    </ul>
+                    <ul
+                        class="list-group border-0 text-start w-auto col-6 col-md-2"
+                    >
+                        <li
+                            class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                        >
+                            Company
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            About Us
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Our People
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Blog & Insights
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Contact Us
+                        </li>
+                    </ul>
+                    <ul
+                        class="list-group border-0 text-start w-auto col-6 col-md-2"
+                    >
+                        <li
+                            class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                        >
+                            Services
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Accounting
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Financial
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Investments
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Tax & Audit
+                        </li>
+                    </ul>
+                    <ul
+                        class="list-group border-0 text-start w-auto col-6 col-md-2"
+                    >
+                        <li
+                            class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                        >
+                            Industries
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Automotive
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Banking
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Insurance
+                        </li>
+                        <li
+                            class="list-group-item txt-white-trans border-0 bg-dark"
+                        >
+                            Healthcare
+                        </li>
+                    </ul>
+                    <form
+                        action="#"
+                        id="newsletterForm"
+                        class="col-12 col-lg-4 mt-5 mt-lg-0 text-start"
+                    >
+                        <p class="txt-gray">
+                            By providing your e-mail address, you are consenting
+                            to receive press releases, presentations and other
+                            information concerning FinLab.
+                        </p>
+                        <div class="input-group mb-3">
+                            <input
+                                type="email"
+                                id="newsletterApply"
+                                class="form-control txt-white bg-dark border-0 border-bottom rounded-0"
+                                placeholder="Your email address"
+                                aria-label=""
+                                aria-describedby="newsletter"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required
+                            />
+                            <button
+                                class="btn border-bottom rounded-0"
+                                title="submit"
+                                type="submit"
+                                id="newsletterSubmit"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="#9ea4b1"
+                                    class="bi bi-arrow-right-circle"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-start py-5 border-bottom w-100">
+                    <p class="txt-gray">
+                        Address: 1270 Beverley Rd Brooklyn, New York 11226
+                        United States.
+                    </p>
+                    <p class="txt-gray mt-0">
+                        Phone:
+                        <span class="txt-white-trans txt-weight-600">
+                            0712 610 33 181
+                        </span>
+                        | Mail:
+                        <span class="txt-white-trans txt-weight-600">
+                            info@example.com
+                        </span>
+                    </p>
+                </div>
+                <div class="pt-5 pb-5">
+                    <p class="txt-gray">
+                        Copyleft © 2021 Develhope Fullstack Class2 Team6. Page
+                        built by
+                        <span class="txt-white">Fabio Viscuso</span>
+                        .
+                    </p>
+                </div>
+            </div>
+        </footer>
         <!-- Bootstrap JS -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -779,6 +1868,8 @@
             crossorigin="anonymous"
         ></script>
         <!-- Local JS -->
+        <script src="../../shared/js/sharedForms.js"></script>
+        <script src="../../shared/js/serverFunctions.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

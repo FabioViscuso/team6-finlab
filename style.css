@@ -14,5 +14,21 @@
 }
 
 .txt-monkey{
-  font-size: clamp(0.6rem, 2vw,  8rem) ;
+  font-size: clamp(0.8rem, 2.3vw,  8rem) ;
+}
+
+.txt-choose-us{
+  font-size: clamp(1rem, 3vw,  9rem)
+}
+
+.link-monkey{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-cta {
+  background-image: url(../../shared/images/finlab-footer.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

@@ -211,8 +211,9 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Homepage</a
           >
+            Homepage
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Home 1</a></li>
             <li><a class="dropdown-item" href="#">Home 2</a></li>
@@ -225,8 +226,9 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Who We Are</a
           >
+            Who We Are
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">About Us</a></li>
             <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
@@ -242,8 +244,9 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >What We Do</a
           >
+            What We Do
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Accounting Services</a></li>
             <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
@@ -264,8 +267,9 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Case Studies</a
           >
+            Case Studies
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
             <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
@@ -306,15 +310,14 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Homepage</a
           >
+            Homepage
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Home 1</a></li>
-            <hr />
             <li><a class="dropdown-item" href="#">Home 2</a></li>
           </ul>
         </li>
-        <hr />
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle txt-green"
@@ -322,23 +325,19 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Who We Are</a
           >
+            Who We Are
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">About Us</a></li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Our Leadership Team</a>
             </li>
-            <hr />
             <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
-            <hr />
             <li><a class="dropdown-item" href="#">Our History</a></li>
-            <hr />
             <li><a class="dropdown-item" href="#">Careers</a></li>
           </ul>
         </li>
-        <hr />
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle txt-green"
@@ -346,41 +345,34 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >What We Do</a
           >
+            What We Do
+          </a>
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" href="#">Accounting Services</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Audit & Tax Services</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Capital Investment</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Finance & Restructuring</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Financial Consultant</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Portfolio Management</a>
             </li>
-            <hr />
             <li>
               <a class="dropdown-item" href="#">Technology Advisory</a>
             </li>
-            <hr />
             <li><a class="dropdown-item" href="#">All Services Page</a></li>
           </ul>
         </li>
-        <hr />
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle txt-green"
@@ -388,29 +380,29 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >Case Studies</a
           >
+            Case Studies
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
-            <hr />
+
             <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
-            <hr />
+
             <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
           </ul>
         </li>
-        <hr />
+
         <li class="nav-item">
           <a class="nav-link txt-green" href="#">Blog & Insights</a>
         </li>
-        <hr />
+
         <li class="nav-item">
           <a class="nav-link txt-green" href="#">Shop</a>
         </li>
-        <hr />
+
         <li class="nav-item">
           <a class="nav-link txt-green" href="#">Contact Us</a>
         </li>
-        <hr />
       </div>
     </div>
     <!-- Modal -->
@@ -434,7 +426,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="#" method="">
               <div class="row">
                 <div class="col-4 my-2">I'm a/an</div>
                 <div class="col-8 my-2">
@@ -442,8 +434,8 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Freelancer/Own Buisness</option>
-                    <option value="1">Other option</option>
+                    <option selected id="modalUserJob" value="freelancer">Freelancer/Own Buisness</option>
+                    <option value="other">Other option</option>
                   </select>
                 </div>
                 <div class="col-4 my-2">I Want</div>
@@ -452,10 +444,10 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Call me to discuss our questions</option>
-                    <option value="2">Email me for digital prospectus</option>
-                    <option value="3">
-                      Meil me your full information pack
+                    <option selected id="modalUserContactMethod" value="call">Call me to discuss our questions</option>
+                    <option value="mail-prospectus">Email me for digital prospectus</option>
+                    <option value="mail-fullpack">
+                      Mail me your full information pack
                     </option>
                   </select>
                 </div>
@@ -465,76 +457,81 @@
                     class="form-select form-select-sm"
                     aria-label=".form-select-sm example"
                   >
-                    <option selected>Financial Consultant</option>
-                    <option value="2">Accounting Services</option>
-                    <option value="3">Tax Services</option>
-                    <option value="4">Careers</option>
-                    <option value="5">Request Additional Informations</option>
+                    <option selected id="modalUserNeededServ" value="financial-consultant">Financial Consultant</option>
+                    <option value="accounting">Accounting Services</option>
+                    <option value="tax-sevices">Tax Services</option>
+                    <option value="careers">Careers</option>
+                    <option value="additional-info">Request Additional Informations</option>
                   </select>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Your name *</label
-                >
+                <label for="modalFormName" class="form-label">
+                  Your name *
+                </label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  id="modalFormName"
+                  aria-describedby="nameHelp"
+                  pattern="^(\w\w+)\s(\w+)$" 
                   placeholder="Your name"
                   required
                 />
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Your email *</label
-                  >
+                  <label for="modalFormEmail" class="form-label">
+                    Your email *
+                  </label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
+                    id="modalFormEmail"
                     placeholder="Your email"
-                    aria-label="Your name"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    aria-label="Your email"
                     required
                   />
                 </div>
                 <div class="col">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Your phone number *</label
-                  >
+                  <label for="modalFormPhone" class="form-label">
+                    Your phone number
+                  </label>
                   <input
                     type="text"
                     class="form-control"
+                    id="modalFormPhone"
                     placeholder="Your phone number"
-                    aria-label="Your Phone number"
-                    required
+                    pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
+                    aria-label="Your Phone number" 
                   />
                 </div>
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Message</label
-                >
+                <label for="modalFormMessage" class="form-label">
+                  Message
+                </label>
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="modalFormMessage"
                   rows="3"
-                  placeholder="Enter a message"
+                  placeholder="Enter a message..."
                 ></textarea>
               </div>
               <div class="mb-3 form-check">
                 <input
                   type="checkbox"
                   class="form-check-input"
-                  id="exampleCheck1"
+                  id="modalFormCommunicationsAgreement"
+                  required
                 />
-                <label class="form-check-label" for="exampleCheck1">
-                  I agree to receive communications from FinLab.</label
-                >
+                <label class="form-check-label" for="exampleCheckModal">
+                  I agree to receive communications from FinLab.
+                </label>
               </div>
-              <button type="submit" class="btn btn-squared-green txt-white">
+              <button type="submit" id="modalFormSubmit" class="btn btn-squared-green txt-white">
                 Send Message
               </button>
             </form>
@@ -542,6 +539,7 @@
         </div>
       </div>
     </div>
+    <!-- Offcanvas-->
     <div
       class="offcanvas offcanvas-start"
       data-bs-scroll="true"
@@ -552,7 +550,7 @@
       <div class="offcanvas-header">
         <button
           type="button"
-          class="btn-close btn-rounded-green text-reset"
+          class="btn-close btn-squared-green text-reset"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
@@ -570,42 +568,52 @@
           fast-changing world.
         </p>
         <p>
-          <strong>Address:</strong> 1270 Beverley Rd Brooklyn, New York 11226
-          United States. <br />
-          <strong>Phone:</strong> <a href="tel:+">0712 610 33 181</a> <br />
-          <strong>Mail:</strong> <a href="mailto:">info@example.com</a>
+          <strong>Address:</strong>
+          1270 Beverley Rd Brooklyn, New York 11226 United States.
+          <br />
+          <strong>Phone:</strong>
+          <a href="tel:+">0712 610 33 181</a>
+          <br />
+          <strong>Mail:</strong>
+          <a href="mailto:">info@example.com</a>
         </p>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"
-            >Request a callback</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Your Name *"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Phone Number *"
-            required
-          />
-        </div>
-        <div class="d-grid gap-2">
-          <button class="btn btn-squared-green txt-white" type="button">
-            Request a Callback
-          </button>
-        </div>
+        <form action="#" method="">
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label">
+              Request a callback
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="offcanvasName"
+              aria-describedby="nameHelp"
+              pattern="^(\w\w+)\s(\w+)$" 
+              placeholder="Your Name *"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number *"
+              id="offcanvasPhone" 
+              name="phone" 
+              pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}"
+              required
+            />
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-squared-green txt-white" id="offcanvasFormSubmit" type="submit">
+              Request a Callback
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <!--HEADER END-->
     <!--HERE STARTS HERO-->
-    <div class="hero bg-dark">
+    <section class="hero bg-dark">
       <div
         id="carouselExampleFade"
         class="carousel slide carousel-fade"
@@ -630,8 +638,9 @@
                   <a
                     href="#"
                     class="btn btn-squared-green btn-carousel-card txt-white"
-                    >Learn How We Can Help</a
                   >
+                    Learn How We Can Help
+                  </a>
                 </div>
               </div>
             </div>
@@ -651,8 +660,9 @@
                   <a
                     href="#"
                     class="btn btn-squared-green btn-carousel-card txt-white"
-                    >Learn How We Can Help</a
                   >
+                    Learn How We Can Help
+                  </a>
                 </div>
               </div>
             </div>
@@ -674,8 +684,9 @@
                   <a
                     href="#"
                     class="btn btn-squared-green btn-carousel-card txt-white"
-                    >Learn How We Can Help</a
                   >
+                    Learn How We Can Help
+                  </a>
                 </div>
               </div>
             </div>
@@ -701,27 +712,28 @@
         </button>
       </div>
       <!--CAROSELLO FINISH-->
-      <div class="container d-flex flex-column flex-md-row
-      justify-content-around"">
-      <div class="col-4 mt-5">
-        <p class="txt-green text-nowrap txt-monkey">
-          <strong> HAVE DIRECT IMPACT</strong>
-        </p>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-around"
+      >
+        <div class="col-4 mt-5">
+          <p class="txt-green text-nowrap txt-monkey">
+            <strong>HAVE DIRECT IMPACT</strong>
+          </p>
+        </div>
+        <div class="col-8 mt-4">
+          <p class="txt-gray text-wrap txt-monkey">
+            If you want to know more about how we can support your business,
+            give our friendly team a call.
+          </p>
+        </div>
       </div>
-      <div class="col-8 mt-4">
-        <p class="txt-gray txt-monkey">
-          If you want to know more about how we can support your business, give
-          our friendly team a call.
-        </p>
-      </div>
-    </div>
 
-    <!--THREE HORIZONTAL CARDS-->
-    <div class="container my-5 pb-5 sm">
-      <div class="row">
+      <!--THREE HORIZONTAL CARDS-->
+      <div class="container my-5 pb-5 sm">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"">
         <div class="col-lg">
           <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
+            <div class="row">
               <div class="col-md-6">
                 <div class="card-body">
                   <h4 class="card-title">Explore Our Company</h4>
@@ -774,48 +786,855 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--HERO FINISH-->
     <!--SERVICES WE PROVIDE SECTION BELOW THIS LINE-->
-    <!-- <section class="services bg-light">
-      <div
-        class="container d-flex flex-row flex-column flex-md-row bg-light w-100% p-5"
-      >
-        <p class="txt-gray fs-5">
-          <strong
-            >OUR GOALS TO PROTECT YOUR FINANCIAL ASSET AND TO
+    <section class="services d-flex col flex-column justify-content-center">
+      <div class="d-flex flex-row flex-column flex-md-row">
+        <p class="txt-gray txt-monkey ms-3">
+          <strong>
+            OUR GOALS TO PROTECT YOUR FINANCIAL ASSET AND TO
             <color class="txt-green">MAKE IT GROW.</color>
           </strong>
         </p>
       </div>
       <hr />
-      <div class="container m-3" style="max-width: 100vw">
-        <p class="txt-green first-text"><strong>SERVICES WE PROVIDE</strong></p>
-        <div class="row d-flex flex-column flex-md-row">
-          <div class="col-6">
-            <h1 class="card-carousel-title">
+      <div class="d-flex row justify-content-center m-2">
+        <div class="row d-flex flex-lg-col">
+          <div class="col-sm-6">
+            <p class="txt-green first-text">
+              <strong>SERVICES WE PROVIDE</strong>
+            </p>
+            <h1 class="card-carousel-title" style="font-weight: bolder">
               Trusted Commercial Finance Broker.
             </h1>
           </div>
-          <div class="d-flex col-6 justify-content-around">
-            <div class="col-3">
-              <p class="txt-green" style="font-size: 4rem; font-weight: bolder">
-                <sub>435</sub> <sup class="fs-6 txt-gray">milion</sup>
+          <div class="col-sm-3">
+            <p class="txt-green" style="font-size: 5rem; font-weight: bolder">
+              <sub>435</sub>
+              <sup class="fs-6 txt-gray">milion</sup>
+            </p>
+            <hr />
+            <div class="card-body">
+              <p class="card-text">
+                Information on 400+ million companies worldwide.
               </p>
-              <hr class="my-5" />
-              <p>Information on 400+ million companies worldwide.</p>
             </div>
-            <div class="col-3 sm">
-              <p class="txt-green" style="font-size: 4rem; font-weight: bolder">
-                <sub>100</sub> <sup class="fs-6 txt-gray">percent</sup>
+          </div>
+          <div class="col-sm-3">
+            <p class="txt-green" style="font-size: 5rem; font-weight: bolder">
+              <sub>100</sub>
+              <sup class="fs-6 txt-gray">percent</sup>
+            </p>
+            <hr />
+            <div class="card-body">
+              <p class="card-text">
+                Overall client satisfaction Macquarie Bank VAN Survey
               </p>
-              <hr class="my-5" />
-              <p>Overall client satisfaction Macquarie Bank VAN Survey</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"">
+        <div class="col-sm d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/img/girl-postit.jpg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex row">
+              <a href="#" class="card-link text-center link-monkey">
+                <strong>ACCOUNT SERVICES</strong>
+              </a>
+              <p class="card-text txt-gray text-center">
+                We’ll match you with an advisor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/img/guy-tablet.jpg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex row">
+              <a href="#" class="card-link text-center link-monkey">
+                <strong>TAX SERVICES</strong>
+              </a>
+              <p class="card-text txt-gray text-center">
+                We’ll match you with an advisor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/img/guys-laptop.jpg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex row">
+              <a href="#" class="card-link text-center link-monkey">
+                <strong>FINANCIAL CONSULTANT</strong>
+              </a>
+              <p class="card-text txt-gray text-center">
+                We’ll match you with an advisor
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+      <div class="d-flex m-5">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4"
+        >
+          <div class="col-sm">
+            <div class="card bg-dark text-white">
+              <img
+                src="/img/explore-company.jpg"
+                class="card-img opacity-25"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h6 class="card-title">Technology Advisory</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-dark text-white">
+              <img
+                src="/img/explore-company.jpg"
+                class="card-img opacity-25"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Capital Investments</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-dark text-white">
+              <img
+                src="/img/explore-company.jpg"
+                class="card-img opacity-25"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Finance & Restructuring</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-dark text-white">
+              <img
+                src="/img/explore-company.jpg"
+                class="card-img opacity-25"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Portfolio Management</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card bg-dark text-white">
+              <img
+                src="/img/explore-company.jpg"
+                class="card-img opacity-25"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Audit & Tax Services</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center mb-5">
+        <button type="button" class="btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-plus-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+            />
+          </svg>
+        </button>
+        <a href="#" class="link-monkey txt-gray fs-4 m-3">View All Services</a>
+      </div>
+      <hr />
+    </section>
+    <!--SERVICES FINISH HERE ABOVE-->
+    <!--INDUSTRIES WE SERVE-->
+
+    <section class="industries d-flex col flex-column justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="txt-green first-text">
+              <strong>INDUSTRIES WE SERVE</strong>
+            </p>
+            <h1 class="txt-monkey" style="font-weight: bolder">
+              Broad Knowledge Base. Deep Insights.
+            </h1>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="d-flex row m-1">
+              <hr />
+              <a class="link-monkey" href="#">Automotive / Aviation</a>
+              <a class="link-monkey" href="#">Manufacturing & Industrial</a>
+              <a class="link-monkey" href="#">Real Estate</a>
+              <a class="link-monkey" href="#">Media & Entertainment</a>
+              <a class="link-monkey" href="#">Social & Public Sector</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="d-flex row m-1">
+              <hr />
+              <a class="link-monkey" href="#">Retail & Ecommerce</a>
+              <a class="link-monkey" href="#">Human Resources</a>
+              <a class="link-monkey" href="#">Medical & Healthcare</a>
+              <a class="link-monkey" href="#">MBanking / Finance / Insurance</a>
+              <a class="link-monkey" href="#">Machinery & Equipment</a>
+            </div>
+          </div>
+        </div>
+        <!--GRID-->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="/img/c6-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Consulting Firm Grows Client Roster by 29 %
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/img/c5-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Management Of Foreign Exchange Risk
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/img/c4-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Corporate Tax Policy And Incorporation In The EU
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/img/c3-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Managing Cash Flow in a Seasonal Business
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/img/c2-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Grows Strategic Accounts by 110% Year-Over-Year
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/img/c1-825x550.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-title d-none d-md-inline lead">
+                  Global Expansion Strategy Guides Financial Firm
+                </p>
+                <!--<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-5">
+          <p class="txt-gray text-center txt-monkey">
+            <strong>
+              LEARN MORE BY READING SOME OF OUR
+              <color class="txt-green">CLIENT RESULTS</color>
+              STORIES.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--WHY CHOOSE US-->
+    <section class="whychooseus d-flex flex-column">
+      <hr />
+      <div
+        class="container row d-flex justify-content-center px-5"
+        style="max-width: 100vw"
+      >
+        <p class="text-center txt-choose-us" style="max-width: 80vw">
+          <strong>Why choose us to be your Financial Advisors?</strong>
+        </p>
+        <p class="text-center fs-6" style="max-width: 80vw; color: gray">
+          we help you to secure a stable and fulfilling financial future
+        </p>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+            <div class="col border-end">
+              <div class="row">
+                <p class="txt-gray txt-choose-us text-center">01.</p>
+              </div>
+              <div class="row">
+                <p class="txt-green txt-choose-us text-center">
+                  <strong>Experienced.</strong>
+                </p>
+              </div>
+              <div class="row">
+                <p class="text-center text-wrap" style="color: gray">
+                  Having lived many “Financial Lives” we know what works and
+                  what doesn’t. Experience is priceless in a financial arena
+                  dominated by investors and advisors who have never seen a
+                  recession or a “bear” market.
+                </p>
+              </div>
+            </div>
+            <div class="col border-end">
+              <div class="row">
+                <p class="txt-gray txt-choose-us text-center">02.</p>
+              </div>
+              <div class="row">
+                <p class="txt-green txt-choose-us text-center">
+                  <strong>Convenience.</strong>
+                </p>
+              </div>
+              <div class="row">
+                <p class="text-center text-wrap" style="color: gray">
+                  You experience personal convenient service with no long phone
+                  holds or voice mail. Instead, we welcome your stopping by,
+                  emails and phone calls at any time and make ourselves as easy
+                  to communicate with as possible.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <p class="txt-gray txt-choose-us text-center">03.</p>
+              </div>
+              <div class="row">
+                <p class="txt-green txt-choose-us text-center">
+                  <strong>Support.</strong>
+                </p>
+              </div>
+              <div class="row">
+                <p class="text-center text-wrap" style="color: gray">
+                  We have a pro-active mindset in regards to client service. Our
+                  focus is on listening, understanding, and caring about your
+                  concerns and then acting to provide assurance and peace of
+                  mind to complicated matters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container row py-5 d-flex justify-content-around">
+        <p class="text-center" style="color: gray">
+          Remember that our team is always just a phone call away. Toll Free:
+          <strong style="color: black">0712 610 33 181</strong>
+        </p>
+      </div>
+    </section>
+    <!--WHY CHOOSE US SECTION FINISH HERE ABOVE-->
+    <!--OUR PEOPLE SECTION START BELOW THIS LINE -->
+    <div
+      class="container d-flex row row-cols-1 row-cols-md-2 justify-content-center"
+    >
+      <div class="col-sm-6"></div>
+      <div class="col-ms-6">
+        <div class="container">
+          <div class="col" style="max-width: 20vw">
+            <p class="txt-green first-text mt-5 mb-4 text-nowrap">
+              <strong>OUR PEOPLE</strong>
+            </p>
+          </div>
+          <div class="row mt-2">
+            <h1
+              class="txt-choose-us mb-5"
+              style="font-weight: bolder; max-width: 250px"
+            >
+              Meet the Executive Team
+            </h1>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 container border-bottom">
+          <div class="col">
+            <p class="text-start" style="color: gray">
+              <strong>Defined by our People.</strong>
+            </p>
+          </div>
+          <div class="col">
+            <p class="txt-gray">
+              We make a sustainable contribution to the world and the people
+              around us.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 container border-bottom py-4">
+          <div class="col">
+            <p class="text-start" style="color: gray">
+              <strong>With an Extraordinary range.</strong>
+            </p>
+          </div>
+          <div class="col">
+            <p class="txt-gray">
+              Sharing a common set of values and investment approach.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 container border-bottom py-4">
+          <div class="col">
+            <p class="text-start" style="color: gray">
+              <strong>Based on Strength of Client.</strong>
+            </p>
+          </div>
+          <div class="col">
+            <p class="txt-gray">
+              Best environment to nurture your skills & help you grow.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 container d-flex justify-content-between py-4"
+        >
+          <a href="#" class="link-monkey txt-monkey text-center text-nowrap">
+            <button class="btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-plus-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                />
+              </svg>
+            </button>
+            <strong style="color: gray">Learn How We Can Help</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--OUR PEOPLE SECTION FINISH ABOVE THIS-->
+    <!--BOLD IDEAS SECTION HERE STARTS-->
+    <section class="container">
+      <div class="row my-5">
+        <div class="col">
+          <p class="text-nowrap" style="font-size: smaller">
+            BOLD IDEAS AND EXTRAORDINARY TEAMS
+          </p>
+        </div>
+        <div class="col">
+          <p style="color: gray">Get to know our Experts</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            <img src="/img/Bitmap1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6 class="card-title text-center">
+                <strong>LARRY SWANK</strong>
+              </h6>
+              <p class="card-text text-center txt-gray">
+                We'll match you with an advisor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/img/Bitmap2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6 class="card-title text-center">
+                <strong>RCHANA DESKUS</strong>
+              </h6>
+              <p class="card-text text-center txt-gray">
+                We'll match you with an advisor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/img/Bitmap3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6 class="card-title text-center">
+                <strong>DANIEL JAMES</strong>
+              </h6>
+              <p class="card-text text-center txt-gray">
+                We'll match you with an advisor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <div class="my-5">
+          <p class="text-center txt-monkey">
+            "Your company has provided consistent, high quality, accounting
+            support during the exponential growth we have experienced over the
+            past two years"
+          </p>
+        </div>
+        <div class="d-flex my-5 justify-content-center">
+          <img
+            src="/img/img-people.jpeg"
+            alt=""
+            srcset=""
+            style="max-width: 80vw"
+          />
+        </div>
+      </div>
+    </section>
+    <!--BOLD IDEAS FINISH HERE-->
+    <!--INDUSTRIES WE SERVE FINISH HERE-->
+    <!--HERE STARTS FROM OUR BLOG-->
+    <section class="container">
+      <div class="row my-5 row-cols-1 row-cols-md-3">
+        <div class="col">
+          <p class="txt-blue fs-6">
+            from our blog - finance news and guidelines
+          </p>
+        </div>
+        <div class="col d-none d-lg-block"></div>
+        <div class="col">
+          <p class="txt-gray text-nowrap">See More All Posts</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col">
+          <div class="card" style="min-width: 18rem">
+            <img src="/img/b7.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                How To Get Back On Track With Your Finances
+              </p>
+            </div>
+            <div class="blockquote-footer">Posted by 21lab.co Sep 22, 2021</div>
+          </div>
+          <div class="card" style="min-width: 18rem">
+            <img src="/img/b6.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                What is Bitcoin, How to Buy & How Transaction Works
+              </p>
+            </div>
+            <div class="blockquote-footer">Posted by 21lab.co Sep 22, 2021</div>
+          </div>
+        </div>
+        <div class="col-5 d-none d-xl-block">
+          <img
+            class="img-fluid d-none d-xl-block"
+            src="/img/c2-pdhc5hzibdaonk8z8xbsw1rwy2ayy2gzvb77rk7rus.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <div class="card" style="min-width: 18rem">
+            <img src="/img/b5.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                9 Types Of Insurance You Need But May Not Have
+              </p>
+            </div>
+            <div class="blockquote-footer">Posted by 21lab.co Sep 22, 2021</div>
+          </div>
+          <div class="card" style="min-width: 18rem">
+            <img src="/img/b4.jpg" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <p class="card-text">6 Things To Do Now If You Have No Savings</p>
+            </div>
+            <div class="blockquote-footer">Posted by 21lab.co Sep 22, 2021</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row my-5 row-cols-1 row-cols-md-3">
+        <div class="col">
+          <p class="txt-blue">
+            SOME A FEW OF OUR CLIENTS, PARTNERS & ACCREDITATIONS
+          </p>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+          <p class="txt-gray text-nowrap fw-bolder">Become Partner</p>
+        </div>
+      </div>
+      <div
+        class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 my-5"
+      >
+        <div class="col">
+          <div class="card h-100">
+            <img src="/img/l3.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/img/l4.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col d-none d-md-inline">
+          <div class="card h-100">
+            <img src="/img/l5.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col d-none d-sm-none d-md-none d-lg-inline">
+          <div class="card h-100">
+            <img src="/img/l6.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col d-none d-lg-none d-xl-inline">
+          <div class="card h-100">
+            <img src="/img/l7.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--HERE ABOVE FINISH BODY-->
+    <!--HERE STARTS FOOTER-->
+    <footer class="bg-dark">
+      <div class="container text-center">
+          <div class="row d-flex pt-5 justify-content-center">
+              <div class="bg-dark text-white col-12 col-md-8">
+                  <div class="container footer-cta py-5">
+                      <h2 class="card-title mb-4 fs-1 txt-weight-700">
+                          Your Future in Finance Starts Here
+                      </h2>
+                      <p class="card-text txt-white-trans mb-4">
+                          Learn more about our commercial loan broker
+                          training program & join our family of over 700
+                          successful entrepreneurs.
+                      </p>
+                      <button
+                          class="btn btn-squared-green txt-white txt-weight-600 mb-5 py-3 px-5"
+                      >
+                          Get My Free Proposal
+                      </button>
+                      <p class="card-text txt-white-trans">
+                          Or call us now at
+                          <span class="txt-white txt-weight-600">
+                              333 69 77 666
+                          </span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div
+              class="row d-flex justify-content-between align-items-center mt-5 pb-4 gx-4"
+          >
+              <ul
+                  class="list-group border-0 text-start w-auto col-6 col-md-2"
+              >
+                  <li
+                      class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                  >
+                      Follow Us
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Facebook
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Twitter
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Instagram
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Linkedin
+                  </li>
+              </ul>
+              <ul
+                  class="list-group border-0 text-start w-auto col-6 col-md-2"
+              >
+                  <li
+                      class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                  >
+                      Company
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      About Us
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Our People
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Blog & Insights
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Contact Us
+                  </li>
+              </ul>
+              <ul
+                  class="list-group border-0 text-start w-auto col-6 col-md-2"
+              >
+                  <li
+                      class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                  >
+                      Services
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Accounting
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Financial
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Investments
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Tax & Audit
+                  </li>
+              </ul>
+              <ul
+                  class="list-group border-0 text-start w-auto col-6 col-md-2"
+              >
+                  <li
+                      class="list-group-item txt-white txt-weight-600 border-0 bg-dark"
+                  >
+                      Industries
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Automotive
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Banking
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Insurance
+                  </li>
+                  <li
+                      class="list-group-item txt-white-trans border-0 bg-dark"
+                  >
+                      Healthcare
+                  </li>
+              </ul>
+              <form
+                  action=""
+                  class="col-12 col-lg-4 mt-5 mt-lg-0 text-start"
+              >
+                  <p class="txt-gray">
+                      By providing your e-mail address, you are consenting
+                      to receive press releases, presentations and other
+                      information concerning FinLab.
+                  </p>
+                  <div class="input-group mb-3">
+                      <input
+                          type="email"
+                          class="form-control txt-white bg-dark border-0 border-bottom rounded-0"
+                          placeholder="Your email address"
+                          aria-label=""
+                          id="newsletterApply"
+                          aria-describedby="button-addon2"
+                          required
+                      />
+                      <button
+                          class="btn border-bottom rounded-0"
+                          title="submit"
+                          type="submit"
+                          id="newsletterSubmit"
+                      >
+                          <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="#9ea4b1"
+                              class="bi bi-arrow-right-circle"
+                              viewBox="0 0 16 16"
+                          >
+                              <path
+                                  fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                              />
+                          </svg>
+                      </button>
+                  </div>
+              </form>
+          </div>
+          <div class="text-start py-5 border-bottom w-100">
+              <p class="txt-gray">
+                  Address:  Oude Doelenstraat 66, 1012 ED Amsterdam, Paesi Bassi.
+              </p>
+              <p class="txt-gray mt-0">
+                  Phone:
+                  <span class="txt-white-trans txt-weight-600">
+                      333 69 77 666
+                  </span>
+                  | Mail:
+                  <span class="txt-white-trans txt-weight-600">
+                      info@example.com
+                  </span>
+              </p>
+          </div>
+<div class="col">
+  <div class="row">
+    <p class="txt-gray-darker" style="font-size: 12px">
+      Copyright © 2022
+      <color class="txt-white">LineThemes.</color>
+      Develhope Fullstack Class2 Team6. Page built by 
+      <color class="txt-white">Marco MoonKey Moncada.</color>
+    </p>
+  </div>
+</div>
+      </div>
+  </footer>
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -823,6 +1642,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Local JS -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="/shared/js/sharedForms.js"></script>
   </body>
 </html>
