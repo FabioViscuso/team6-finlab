@@ -786,7 +786,7 @@
               <p class="text-light text-center fs-5">Learn more about our commercial loan broker training program &<br>
                 join our family of over 700 successful entrepreneurs.</p>
               <div class="d-md-grid gap-2 col-md-lg-3 mx-auto">
-                <button class="btn-lg btn-success mt-5" type="button">Get My Free Proposal</button>
+                <button class="btn-lg btn-success mt-5"  type="button">Get My Free Proposal</button>
               </div>
               <p class="text-center text-light mt-3 mb-5">Or call us now at <b>0712 610 33 181</b></p>
             </div>
@@ -827,10 +827,10 @@
                     <p class="text-secondary fs-5">By providing your e-mail address, you are consenting to<br>
                       receive press releases, presentations and other<br>
                       information concerning FinLab.</p>
-                    <form action="#" class="mb-3 borderInput d-flex flex-row">
-                      <input type="email" class="form-control border-none navbardark mb-2 border-0" id="exampleInputEmail1"
+                    <form action="#"  id="newsletterForm" class="mb-3 borderInput d-flex flex-row">
+                      <input type="email" class="form-control border-none navbardark mb-2 border-0" id="newsletterApply"
                         placeholder="Your email address" required aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
-                      <button type="submit" class="buttonfooter mb-2 border-0">
+                      <button type="submit" id="newsletterSubmit" class="buttonfooter mb-2 border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="gray"
                           class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
@@ -882,18 +882,18 @@
         <div class="offcanvas-body">
             <div class="imm my-5">
             </div>
-            <p>Our firm provides the expert support organisations need to thrive in a fast-changing
+            <p>Our firm provides the expert support organizations need to thrive in a fast-changing
                 world.
             </p>
             <p> <strong> Address: </strong> 1270 Beverley Rd Brooklyn, New York 11226 United States.
             </p>
             <p><strong>Phone:</strong> 0712 610 33 181</p>
             <p class=""><strong>Mail:</strong>info@example.com</p>
-            <form action="#" class=" d-flex flex-column">
+            <form action="#" id="offcanvForm" class=" d-flex flex-column">
                 <p><strong>Request a Callback</strong></p>
-                <input type="text" class="mx-2 my-2" placeholder="Your Name *" required pattern="^(\w\w+)\s(\w+)$">
-                <input type="tel" class="mx-2 my-2" placeholder="Your Phone *" required pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}">
-                <button type="submit" class="btn btn-success py-2">Request a Callback </button>
+                <input type="text" id="offcanvasName" class="mx-2 my-2" placeholder="Your Name *" required pattern="^(\w\w+)\s(\w+)$">
+                <input type="tel" id="offcanvasPhone" class="mx-2 my-2" placeholder="Your Phone *" required pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}">
+                <button type="submit" id="offcanvasFormSubmit" class="btn btn-success py-2">Request a Callback </button>
             </form>
         </div>
     </div>
@@ -919,22 +919,22 @@
 
                 <!--FORM MODALE-->
 
-                <form action="#">
+                <form action="#" id="modalForm">
                     <div class="modal-body d-flex justify-content-between">
                         <span>I'm a/an</span>
-                        <select class="form-select form-select-sm py-2 border-top-0 w-75"
+                        <select id="modalUserJob" class="form-select form-select-sm py-2 border-top-0 w-75"
                             aria-label="Default select example">
-                            <option selected>Freelencer Own Business</option>
-                            <option value="1">Other Options</option>
+                            <option selected value="freelancer">Freelencer Own Business</option>
+                            <option value="other">Other Options</option>
                         </select>
                     </div>
 
                     <div class="modal-body d-flex justify-content-between">
                         <span>I Want</span>
                         <select class="form-select py-2 border-top-0 w-75" aria-label="Default select example">
-                            <option selected>Call me to Discuss my Questions</option>
-                            <option value="1">Email me your digital prospectus</option>
-                            <option value="1">Mail me your full information pack </option>
+                            <option selected id="modalUserContactMethod" value="call">Call me to Discuss my Questions</option>
+                            <option value="mail-prospectus">Email me your digital prospectus</option>
+                            <option value="mail-fullpack">Mail me your full information pack </option>
                         </select>
                     </div>
 
@@ -942,11 +942,11 @@
                     <div class="modal-body d-flex justify-content-between">
 
                         <span>I interested</span>
-                        <select class="form-select py-2 border-top-0 w-75" aria-label="Default select example">
-                            <option selected>Financial Consultant</option>
-                            <option value="1">Accounting Services</option>
-                            <option value="1">Careers </option>
-                            <option value="1">Request Additional Information</option>
+                        <select id="modalUserNeededServ" class="form-select py-2 border-top-0 w-75" aria-label="Default select example">
+                            <option selected value="financial-consultant">Financial Consultant</option>
+                            <option value="accounting">Accounting Services</option>
+                            <option value="tax-services">Careers </option>
+                            <option value="additional-info">Request Additional Information</option>
                         </select>
                     </div>
 
@@ -954,32 +954,32 @@
                     <div class="mb-3 ">
                         <label for="exampleInputEmail1" class="form-label">Your Name * </label>
                         <input type="text" class="form-control px-2 py-2 my-2 " placeholder="Eg:John Doe" required
-                            id="exampleInputText" aria-describedby="TextlHelp " pattern="^(\w\w+)\s(\w+)$">
+                            id="modalFormName" aria-describedby="TextlHelp " pattern="^(\w\w+)\s(\w+)$">
                         <div id="textlHelp" class="form-text"></div>
                     </div>
                     <div class="row">
                         <div class="name d-flex flex-column col-6">
                             <span>Your Email *</span>
-                            <input type="email" class="px-2 py-2 my-2" placeholder="Your Email *" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+                            <input type="email" id="modalFormEmail" class="px-2 py-2 my-2" placeholder="Your Email *" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
                         </div>
 
                         <div class="mail d-flex flex-column col-6">
                             <span>Your Phone Number </span>
-                            <input type="tel" class="px-2 py-2 my-2" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}">
+                            <input type="tel" id="modalFormPhone" class="px-2 py-2 my-2" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}">
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label"
                             placeholder="Enter Message">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="modalFormMessage" rows="3"></textarea>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                        <label class="form-check-label" for="exampleCheck1">I agree to receive communications from
+                        <input type="checkbox" class="form-check-input" id="modalFormCommunicationsAgreement" required>
+                        <label class="form-check-label" for="modalFormCommunicationsAgreement">I agree to receive communications from
                             FinLab.</label>
                     </div>
-                    <button type="submit" class="btn btn-success">Send Message</button>
+                    <button type="submit" id="modalFormSubmit" class="btn btn-success">Send Message</button>
                 </form>
 
             </div>
@@ -1003,6 +1003,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
+   <script src="../../shared/js/serverFunctions.js"></script>
+   <script src="../../shared/js/sharedForms.js"></script>
 </body>
 
 </html>
