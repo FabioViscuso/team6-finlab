@@ -22,10 +22,10 @@
   <body>
     <!--HEADER : TOPBAR-->
     <ul
-      class="nav nav-pills bg-dark sticky-top nav-fill p-4 d-flex justify-content-between"
+      class="nav nav-pills align-items-center m-0 bg-dark sticky-top nav-fill px-5 d-flex justify-content-between"
     >
       <div class="d-flex">
-        <li class="nav-item">
+        <li class="nav-item align-items-center">
           <a class="nav-link fs-1 txt-green" aria-current="page" href="#">
             <img
               class="logo-responsive"
@@ -34,14 +34,14 @@
             />
           </a>
         </li>
-        <div class="d-flex align ms-5 pt-2 d-none d-lg-block">
+        <div class="d-flex align-self-center mx-5 p-0 d-none d-lg-block">
           <a class="navbar-brand" href="#" ms-1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
               fill="white"
-              class="bi bi-facebook"
+              class="bi bi-facebook m-2"
               viewBox="0 0 16 16"
             >
               <path
@@ -55,7 +55,7 @@
               width="20"
               height="20"
               fill="white"
-              class="bi bi-twitter"
+              class="bi bi-twitter m-2"
               viewBox="0 0 16 16"
             >
               <path
@@ -69,7 +69,7 @@
               width="20"
               height="20"
               fill="white"
-              class="bi bi-telegram"
+              class="bi bi-telegram m-2"
               viewBox="0 0 16 16"
             >
               <path
@@ -83,7 +83,7 @@
               width="20"
               height="20"
               fill="white"
-              class="bi bi-messenger"
+              class="bi bi-messenger m-2"
               viewBox="0 0 16 16"
             >
               <path
@@ -97,14 +97,14 @@
       <div class="chat-expert">
         <button
           type="button"
-          class="btn btn-squared-green me-3 txt-white d-none d-sm-inline d-md-inline lg-inline"
+          class="btn btn-squared-green rounded-pill me-3 txt-white d-none d-sm-inline d-md-inline lg-inline px-4 "
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="16"
+            height="16"
             fill="white"
             class="bi bi-chat-fill"
             viewBox="0 0 16 16"
@@ -113,21 +113,21 @@
               d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"
             />
           </svg>
-          Talk an Expert
+          <strong class="p-2">Talk an Expert</strong> 
         </button>
 
         <a class="navbar-brand" href="#">
           <button
             type="button"
-            class="btn btn-rounded-white d-none d-sm-none d-md-inline lg-inline"
+            class="btn btn-rounded-white d-none p-0 d-sm-none d-md-inline lg-inline"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
             title="No products in the cart."
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="18"
+              height="18"
               fill="currentColor"
               class="bi bi-cart2"
               viewBox="0 0 16 16"
@@ -139,11 +139,11 @@
           </button>
         </a>
         <a class="navbar-brand" href="#">
-          <button class="btn btn-rounded-white d-none d-sm-none d-md-inline">
+          <button class="btn btn-rounded-white p-0 d-none d-sm-none d-md-inline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="18"
+              height="18"
               fill="currentColor"
               class="bi bi-search"
               viewBox="0 0 16 16"
@@ -156,7 +156,7 @@
         </a>
         <!--INSERISCI QUI IL BURGER OFFCANVAS-->
         <button
-          class="btn btn-rounded-white d-sm-inline d-md-inline d-lg-none d-xl-none"
+          class="btn btn-rounded-white p-0 d-sm-inline d-md-inline d-lg-none d-xl-none"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight"
@@ -164,11 +164,11 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="30"
+            height="30"
             fill="currentColor"
-            class="bi bi-list"
-            viewBox="6 -1 12 12"
+            class="bi bi-list p-1"
+            viewBox="0 0 16 16"
           >
             <path
               fill-rule="evenodd"
@@ -181,9 +181,9 @@
     <!--TOPBAR FINISH-->
     <div class="flex-row sticky-top d-none w-100 d-lg-inline-block">
       <!--DOWNBAR STARTS-->
-      <ul class="nav nav-fills p-4 d-flex bg-dark justify-content-between">
+      <ul class="nav nav-fills px-5 py-4  d-flex bg-dark justify-content-between">
         <button
-          class="btn btn-rounded-green"
+          class="btn btn-rounded-green p-0"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasWithBothOptions"
@@ -191,7 +191,7 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="25"
+            width="30"
             height="30"
             fill="white"
             class="bi bi-list"
@@ -256,7 +256,7 @@
             </li>
             <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
             <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
-            <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+            <li><a class="dropdown-item" href="/pages/tech-advisory/index.html">Technology Advisory</a></li>
             <li><a class="dropdown-item" href="#">All Services Page</a></li>
           </ul>
         </li>
@@ -264,16 +264,16 @@
           <a
             class="nav-link dropdown-toggle txt-white"
             data-bs-toggle="dropdown"
-            href="#"
+            href="/pages/case-study-3/index.html"
             role="button"
             aria-expanded="false"
           >
             Case Studies
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
-            <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
-            <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+            <li><a class="dropdown-item" href="/pages/case-study-3/index.html">Cases Grid 1</a></li>
+            <li><a class="dropdown-item" href="/pages/case-study-3/index.html">Cases Grid 2</a></li>
+            <li><a class="dropdown-item" href="/pages/case-study-3/index.html">Cases Grid 3</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -283,7 +283,7 @@
           <a class="nav-link txt-white" href="#">Shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link txt-white" href="#">Contact Us</a>
+          <a class="nav-link txt-white" href="/pages/contact-us/index.html">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -368,7 +368,7 @@
               <a class="dropdown-item" href="#">Portfolio Management</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Technology Advisory</a>
+              <a class="dropdown-item" href="/pages/tech-advisory/index.html">Technology Advisory</a>
             </li>
             <li><a class="dropdown-item" href="#">All Services Page</a></li>
           </ul>
@@ -401,7 +401,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link txt-green" href="#">Contact Us</a>
+          <a class="nav-link txt-green" href="/pages/contact-us/index.html">Contact Us</a>
         </li>
       </div>
     </div>
@@ -1624,8 +1624,8 @@
               </p>
           </div>
 <div class="col">
-  <div class="row">
-    <p class="txt-gray-darker" style="font-size: 12px">
+  <div class="row m-0">
+    <p class="txt-gray-darker p-5 m-0" style="font-size: 12px">
       Copyright © 2022
       <color class="txt-white">LineThemes.</color>
       Develhope Fullstack Class2 Team6. Page built by 
