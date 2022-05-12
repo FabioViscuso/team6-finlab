@@ -34,6 +34,11 @@ class ContactRequest {
             .catch((e) => console.log(e));
     }
 
+    logs() {
+        console.table(this);
+        console.log(`Serialized: `, this.toJson());
+    }
+
     toJson() {
         return JSON.stringify(this);
     }
@@ -65,7 +70,7 @@ offcanvBtn.addEventListener("click", (event) => {
     const isFormValid = document.getElementById("offcanvForm").checkValidity();
     if (!isFormValid) {
         /* If form is not valid, use the usual way to report it to the user */
-        document.getElementById("offcanForm").reportValidity();
+        document.getElementById("offcanvForm").reportValidity();
     } else {
         /* Populating the form */
         const newCallbackRequest = new CallbackRequest(
@@ -74,11 +79,13 @@ offcanvBtn.addEventListener("click", (event) => {
         );
 
         /* Logging */
-        console.table(newCallbackRequest);
-        console.log(newCallbackRequest.toJson());
+        newCallbackRequest.logs();
 
         /* Sending to server */
         newCallbackRequest.sendToServer();
+
+        /* Resetting the form */
+        document.getElementById("offcanvForm").reset();
     }
 });
 
@@ -107,11 +114,13 @@ modalBtn.addEventListener("click", (event) => {
         );
 
         /* Logging */
-        console.table(modalRequest);
-        console.log(modalRequest.toJson());
+        modalRequest.logs();
 
         /* Sending to server */
         modalRequest.sendToServer();
+
+        /* Resetting the form */
+        document.getElementById("modalForm").reset();
     }
 });
 
@@ -137,10 +146,12 @@ newsletterBtn.addEventListener("click", (event) => {
         );
 
         /* Logging */
-        console.table(newsletterReq);
-        console.log(newsletterReq.toJson());
+        newsletterReq.logs();
 
         /* Sending to server */
         newsletterReq.sendToServer();
+
+        /* Resetting the form */
+        document.getElementById("newsletterForm").reset();
     }
 });

@@ -11,7 +11,7 @@ techAdvFormBtn.addEventListener("click", (event) => {
         document.getElementById("techAdvForm").reportValidity();
     } else {
         /* Populating the form */
-        const techAdvForm = new ContactRequest(
+        const techAdvFormData = new ContactRequest(
             document.getElementById("techAdvFormName").value,
             document.getElementById("techAdvFormPhone").value,
             document.getElementById("techAdvFormEmail").value,
@@ -23,10 +23,12 @@ techAdvFormBtn.addEventListener("click", (event) => {
         );
 
         /* Logging */
-        console.table(techAdvForm);
-        console.log(techAdvForm.toJson());
+        techAdvFormData.logs();
 
         /* Sending form to server */
-        techAdvForm.sendToServer();
+        techAdvFormData.sendToServer();
+
+        /* Resetting the form */
+        document.getElementById("techAdvForm").reset();
     }
 });
