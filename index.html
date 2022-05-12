@@ -426,7 +426,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form action="#" method="">
+            <form action="#" method="" id="modalForm">
               <div class="row">
                 <div class="col-4 my-2">I'm a/an</div>
                 <div class="col-8 my-2">
@@ -577,7 +577,7 @@
           <strong>Mail:</strong>
           <a href="mailto:">info@example.com</a>
         </p>
-        <form action="#" method="">
+        <form action="#" method="" id="offcanvForm">
           <div class="mb-3">
             <label for="exampleInput" class="form-label">
               Request a callback
@@ -1567,7 +1567,8 @@
               </ul>
               <form
                   action=""
-                  class="col-12 col-lg-4 mt-5 mt-lg-0 text-start"
+                  class="col-12 col-lg-4 mt-5 mt-lg-0 text-start" 
+                  id="newsletterForm"
               >
                   <p class="txt-gray">
                       By providing your e-mail address, you are consenting
@@ -1644,5 +1645,6 @@
     <!-- Local JS -->
     <!-- <script src="index.js"></script> -->
     <script src="/shared/js/sharedForms.js"></script>
+    <script src="/shared/js/serverFunctions.js"></script>
   </body>
 </html>
